@@ -59,11 +59,15 @@ h1::after {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 340px) {
    #text{
        font-size:20px;
    }
    #myName{
        font-size:30px;
+   }
+   #particles-js{
+
+        overflow:auto;
    }
 }
