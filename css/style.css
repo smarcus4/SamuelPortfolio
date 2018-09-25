@@ -1,24 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 /* canvas work */
 html, body {
-    width: 100%;
-    height: 100%;
-    font-family: 'PT Sans', sans-serif;
 
-    overflow-x: hidden;
+    height: 100%;
+    width:100%;
+    font-family: 'PT Sans', sans-serif;
    
     
+}
+html{
+    overflow-x:hidden;
 }
 
 
 #particles-js{
    
     background: linear-gradient(110deg,rgb(30, 67, 132),rgb(7, 125, 138));
-    height: 820px;
+    height: 100vh;   
     width: 100vw;
-    position:absolute;
-    overflow: hidden; 
+    position: relative;
     opacity: 1;
+    
     
     
    
@@ -26,6 +28,7 @@ html, body {
 }
 
 #myName{
+    text-align: center;
     color: rgb(252, 101, 101);
     font-style: bold;
     padding: 0px 20px;
@@ -38,14 +41,16 @@ html, body {
 #text{
     position: absolute;
     left: 0;
-    top: 12%;
+    top: 10%;
     padding: 0 20px;
-    width: 100vw;
+    width: 100%;
     color: white;
     text-align: center;
     font-family: 'PT Sans', sans-serif;
     display: inline;
     font-size: 30px; 
+    line-height: 90px;
+    
 }
 
 h1::after {
@@ -58,7 +63,7 @@ h1::after {
 }
 
 #canvasMe{
-    width: 200px;
+    width: 150px;
     border-radius: 37%;
 
 }
@@ -101,9 +106,8 @@ h1::after {
 }
 
 .navBar{
-    
-    bottom: 0;
-    left: 0;
+    bottom:0;
+    left:0;
     position: absolute;
     height:60px;
     width: 100%;
@@ -111,14 +115,15 @@ h1::after {
     text-align: left;
     z-index: 99;
     list-style-type: none;
+    transition: 0.35s all ease;
 
    
 }
 
 .buttonList{
-    position:relative;
-    margin: 0 90px;
-    position: initial;
+    
+    top: 60px;
+    width:100%;
     background: none;
     overflow:visible;
     color: white;
@@ -129,16 +134,15 @@ h1::after {
 
 .navlist{
    
-    position: initial;
     display:inline;
     width: 100%;
     margin: 0 40px;
     color: white;
     font-size: 20px;
+    transition: 0.35s all ease;
  
 }
 .links{
-    position: initial;
     width: 100%;
     color: white;
     margin: 0;
@@ -146,6 +150,7 @@ h1::after {
     text-decoration:none;
     font-family: 'PT Sans', sans-serif;
     transition: 0.2s;
+    text-transform: uppercase;
 
 }
 
@@ -166,11 +171,40 @@ h1::after {
 
 
 
+
+
 /* end canvas work */
 
 
 
+/* skills */
 
+
+
+#skills{
+    background: rgb(106, 184, 174);
+    width:100%;
+    height: 100vh;
+    position: relative;
+}
+
+#skillHeader{
+    color: rgb(50, 95, 89);
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+
+}
+
+#skillHeader::after {
+    content: '';
+    width: 70px;
+    display: block;
+    background: rgb(167, 214, 208); 
+    height: 8px;
+    margin: 30px auto;    
+}
 
 
 

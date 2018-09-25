@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/animate.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="images/png" sizes="32x32" href="./images/realFav.png">
 
     
     <!-- http links -->
@@ -24,19 +25,21 @@
 <div class="allContent">
     <section id="header">
         <div id="particles-js">
+        </div>
+        <div id="canvasContent">
             <div id="text">
                 <p id="hello">Hello, my name is</p>
                 <h1 id="myName">Samuel Marcus</h1>
                 <img id="canvasMe" src="./images/aboutme.jpg" alt="canvasphoto"/>
                 <p id="info">I am a full-stack developer at the GW coding bootcamp</p>
-                <a href=""><button class="btn btn-lg" id="canvasBtn">Learn More<i id ="arrow"class="fas fa-angle-right rotate"></i></button></a>
+                <a href="#skills"><button class="btn btn-lg" id="canvasBtn">Learn More<i id ="arrow"class="fas fa-angle-right rotate"></i></button></a>
             </div>
-            <div class="navBar">
-                <ul class="buttonList">
-                    <li class="navlist"><a class="active links" href="#header">Home</a></li>
-                    <li class="navlist"><a class= "links" href="#news">About</a></li>
-                    <li class="navlist"><a class= "links" href="#contact">Projects</a></li>
-                    <li class="navlist"><a class= "links" href="#about">Contact</a></li>
+            <div class="navBar" id="mainNav">
+                <ul class="buttonList navbar-collapse" data-toggle="collapse">
+                    <li class="navlist"><a class="links" href="#header">Home</a></li>
+                    <li class="navlist"><a class= "links" href="#">About</a></li>
+                    <li class="navlist"><a class= "links" href="#">Projects</a></li>
+                    <li class="navlist"><a class= "links" href="#">Contact</a></li>
                 </ul>
             </div> 
         </div>
@@ -44,11 +47,11 @@
 
 
 
-    <section id="home">
-        <div ="morecontent">
-            <p>Conent</p>
-
-        </div>
+    <section id="skills">
+       <div id="mySkill" class="row">
+            <h1 id="skillHeader">Skills</h1>
+       </div>
+            
     </section>
 
 
