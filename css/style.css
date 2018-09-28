@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 /* canvas work */
-html, body {
+html, body  {
 
     height: 100%;
     width:100%;
     font-family: 'PT Sans', sans-serif;
-   
-    
+    margin:0;
+    padding:0;
+       
 }
+
+
 html{
     overflow-x:hidden;
 }
+.container {
+    margin: 0;
+    width: 100%;
+
+}
+
 
 
 #particles-js{
@@ -20,6 +29,7 @@ html{
     width: 100vw;
     position: relative;
     opacity: 1;
+    overflow: visible;
     
     
     
@@ -123,9 +133,9 @@ h1::after {
 .buttonList{
     
     top: 60px;
-    width:100vw;
+    width:100%;
     background: none;
-    overflow:visible;
+    /* overflow:visible; */
     color: white;
     margin-top: 15px;
     
@@ -135,7 +145,7 @@ h1::after {
 .navlist{
    
     display:inline;
-    width: 100vw;
+    width: 100%;
     margin: 0 40px;
     color: white;
     font-size: 20px;
@@ -181,38 +191,13 @@ h1::after {
 
 
 
-#skills{
-    background: rgb(106, 184, 174);
-    width:100%;
-    height: 100vh;
-    position: relative;
-}
-
-#skillHeader{
-    color: rgb(50, 95, 89);
-    font-family: 'PT Sans', sans-serif;
-    text-align: center;
-    font-size: 40px;
-    padding-top: 20px;
-
-}
-
-#skillHeader::after {
-    content: '';
-    width: 70px;
-    display: block;
-    background: rgb(167, 214, 208); 
-    height: 8px;
-    margin: 30px auto;    
-}
-
 
 
 
 
 
 /* Mobile Friendly Canvas */
-
+/* 
 @media only screen and (max-width: 340px) {
    #text{
        font-size:20px;
@@ -222,6 +207,13 @@ h1::after {
    }
    #particles-js{
 
-        overflow:auto;
+        overflow:au to;
    }
 }
+
+@media only screen and (min-width:300px) {
+    body {
+    width: 100%;
+    }
+  
+} */
