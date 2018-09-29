@@ -190,30 +190,50 @@ h1::after {
 /* skills */
 
 
+#skills{
+    background: rgb(106, 184, 174);
+    width:100%;
+    height: 100vh;
+    position: relative;
+}
 
+#skillHeader{
+    color: rgb(50, 95, 89);
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+
+}
+
+#skillHeader::after {
+    content: '';
+    width: 70px;
+    display: block;
+    background: rgb(167, 214, 208); 
+    height: 8px;
+    margin: 30px auto;    
+}
 
 
 
 
 
 /* Mobile Friendly Canvas */
-/* 
-@media only screen and (max-width: 340px) {
+
+@media only screen and (max-width: 540px) {
    #text{
        font-size:20px;
    }
    #myName{
        font-size:30px;
    }
-   #particles-js{
-
-        overflow:au to;
+   .links{
+       font-size:10px;
+       top:0;
    }
+
 }
 
-@media only screen and (min-width:300px) {
-    body {
-    width: 100%;
-    }
+
   
-} */
