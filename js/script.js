@@ -6,6 +6,13 @@ $("#info").addClass("animated fadeIn delay-3s");
 $("#canvasBtn").addClass("animated fadeIn delay-3s");
 $("#skillHeader").addClass("animated flash");
 
+//array for different greetings to be appended.
+var greetingArr = ["Hello", "Shalom","Hola","Namaste","Ciao"]
+var randomGreeting = greetingArr[Math.floor(Math.random()*greetingArr.length)];
+
+//var greetingText get span element by id
+var greetingText = $("#introText");
+$(greetingText).html(randomGreeting);
 
 
 
@@ -15,16 +22,3 @@ $('.btn-lg').hover(function () {
 });
 
 
-
-// window.onscroll = function() {myFunction()};
-
-// var navbar = document.getElementById(".navBar");
-// var sticky = navbar.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
