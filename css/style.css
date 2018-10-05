@@ -291,6 +291,7 @@ h1::after {
 @media only screen and (max-width: 500px) {
    #text{
        font-size:20px;
+       width: 100%;
    }
    #myName{
        font-size:30px;
