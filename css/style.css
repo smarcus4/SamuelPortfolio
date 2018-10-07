@@ -177,7 +177,7 @@ h1::after {
     color: rgb(252, 101, 101);
 }
 
-/* end canvas work */
+
 
 
 
@@ -186,10 +186,9 @@ h1::after {
 
 #skills{
     background: rgb(89, 154, 145);
-    /* height: 100%; */
     width:100%;
-    position: absolute;
-    background-size: cover;
+    position: relative;
+    padding-bottom: 50px;
     
 }
 
@@ -323,6 +322,42 @@ h1::after {
     text-align: center;
 
 }
+
+/* PROJECTS SECTION */
+
+#myProjects{
+
+
+    background: rgb(176, 225, 218);
+    /* height: 100%; */
+    width:100%;
+    position: relative;
+    background-size: cover;
+
+}
+
+#projectHeader{
+    color: rgb(50, 95, 89);
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    margin-top: 90px;
+
+}
+#projectHeader::after {
+    content: '';
+    width: 70px;
+    display: block;
+    background: rgb(167, 214, 208); 
+    height: 8px;
+    margin: 30px auto;    
+}
+
+
+
+
+
 
 
 /* Mobile Friendly Canvas */
