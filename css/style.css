@@ -272,7 +272,7 @@ h1::after {
     padding:0;
 
     display: flex;
-    max-height: 520px;
+    max-height: 420px;
     flex-flow: wrap column;
     text-align: center;
 
@@ -283,7 +283,7 @@ h1::after {
     margin:0;  
     padding:0;
     display: flex;
-    max-height: 300px;
+    max-height: 200px;
     flex-flow: wrap column;
     text-align: center;
 
