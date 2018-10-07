@@ -22,7 +22,11 @@ html{
 
 
 
-
+#cover{
+    margin:0;
+    height: 100vh;
+    width:100%;
+}
 #particles-js{
    
     background: linear-gradient(110deg,rgb(30, 67, 132),rgb(7, 125, 138));
@@ -182,7 +186,7 @@ h1::after {
 
 #skills{
     background: rgb(89, 154, 145);
-    
+    /* height: 100%; */
     width:100%;
     position: absolute;
     background-size: cover;
@@ -238,7 +242,7 @@ h1::after {
     
 }
 
-#frontEnd{
+#nameOfWork{
     color: rgb(50, 95, 89);
     font-family: 'PT Sans', sans-serif;
     text-align: center;
@@ -253,7 +257,7 @@ h1::after {
 
     font-size: 16px;
 }
-#frontEnd::after {
+#nameOfWork::after {
     content: '';
     width: 70px;
     display: block;
@@ -261,13 +265,37 @@ h1::after {
     height: 6px;
     margin: 20px auto;    
 }
-.iconBlock{
+.frontBlock{
     
     list-style: none;
     margin:0;  
-    padding: 50px;
+    padding:0;
+
     display: flex;
-    max-height: 600px;
+    max-height: 520px;
+    flex-flow: wrap column;
+    text-align: center;
+
+}
+
+.serverBlock{
+    list-style: none;
+    margin:0;  
+    padding:0;
+    display: flex;
+    max-height: 300px;
+    flex-flow: wrap column;
+    text-align: center;
+
+}
+
+.dataBlock{
+    list-style: none;
+    padding:0;
+
+    margin:0;  
+    display: flex;
+    max-height: 100px;
     flex-flow: wrap column;
     text-align: center;
 
@@ -320,7 +348,19 @@ h1::after {
         width: 100px;
     }
 
-    .iconBlock{
+    .frontEnd{
+        text-align: center;
+        padding: 40px;
+        max-height: 500px;
+
+    }
+    .serverEnd{
+        text-align: center;
+        padding: 40px;
+        max-height: 500px;
+
+    }
+    .dataEnd{
         text-align: center;
         padding: 40px;
         max-height: 500px;
