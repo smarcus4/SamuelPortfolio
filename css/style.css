@@ -204,8 +204,8 @@ h1::after {
     background: rgb(89, 154, 145);
     width:100%;
     position: relative;
-    padding-bottom: 50px;
-    padding:0;
+    padding-bottom: 60px;
+    
     
 }
 
@@ -432,7 +432,8 @@ h1::after {
     }
     #particles-js{
    
-        position: absolute;
+        /* position: absolute; */
+        height:100vh;
         display: block;   
         width: 100%;
         opacity: 1;
