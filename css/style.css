@@ -186,7 +186,7 @@ h1::after {
 
 #skills{
     background: rgb(89, 154, 145);
-    width:100%;
+    /* width:100%; */
     position: relative;
     padding-bottom: 50px;
     
