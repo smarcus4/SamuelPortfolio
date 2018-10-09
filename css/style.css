@@ -432,9 +432,9 @@ h1::after {
     }
     #particles-js{
    
-        /* position: absolute; */
+        position: absolute;
         height:100vh;
-        display: block;   
+        /* display: block;    */
         width: 100%;
         opacity: 1;
     }
