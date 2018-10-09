@@ -433,7 +433,7 @@ h1::after {
     #particles-js{
    
         position: absolute;
-     
+        height:100%;
         opacity: 1;
     }
     
