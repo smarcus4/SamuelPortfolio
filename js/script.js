@@ -26,7 +26,7 @@ $('#canvasBtn').click(function(){
 
     $('html, body').animate({
     scrollTop: $("#skills").offset().top
-    }, 1000);
+    }, 500);
     
 });
 
