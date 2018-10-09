@@ -30,5 +30,14 @@ $('#canvasBtn').click(function(){
     
 });
 
+$('#projectBtn').click(function(){
+
+    $('html, body').animate({
+    scrollTop: $("#myProjects").offset().top
+    }, 500);
+    
+});
+
+
 
 
