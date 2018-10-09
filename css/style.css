@@ -188,7 +188,7 @@ h1::after {
 
 }
 
-.links.active{
+.links:active{
     text-decoration:none;
 }
 
@@ -395,7 +395,7 @@ h1::after {
         margin:0;
         left:0;
     }
-    .links.active{
+    .links:active{
         text-decoration:none;
     }
     
