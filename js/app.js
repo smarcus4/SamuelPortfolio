@@ -70,10 +70,10 @@ particlesJS('particles-js',
       "move": {
         "enable": true,
         "speed": 1,
-        "direction": "bottom",
+        "direction": "bottom-right",
         "random": false,
         "straight": false,
-        "out_mode": "bounce",
+        "out_mode": "out",
         "attract": {
           "enable": true,
           "rotateX": 1000,
