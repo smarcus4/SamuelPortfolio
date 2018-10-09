@@ -26,7 +26,7 @@ html{
 
 #cover{
     margin:0;
-    height: 100vh;
+    height: 100%;
     width:100vw;
    
 }
@@ -34,13 +34,14 @@ html{
 #particles-js{
   background: linear-gradient(110deg,rgb(30, 67, 132),rgb(7, 125, 138));
   width: 100%;
-  height:100%;
+  height:100vh;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 0; 
+  overflow: none;
    
     /* background: linear-gradient(110deg,rgb(30, 67, 132),rgb(7, 125, 138));
     width: 100%;
