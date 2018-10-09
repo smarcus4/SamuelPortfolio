@@ -21,4 +21,14 @@ $('.btn-lg').hover(function () {
     $(this).children('#arrow').toggleClass('down');
 });
 
+// SMOOTH SCROLL FROM CANVAS HOME TO SKILLS
+$('#canvasBtn').click(function(){
+
+    $('html, body').animate({
+    scrollTop: $("#skills").offset().top
+    }, 1000);
+    
+});
+
+
 

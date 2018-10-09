@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/animate.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="icon" type="images/png" sizes="32x32" href="./images/realFav.png">
+    <link rel="stylesheet" type="text/css" href="./plugins/aos/aos.css">
 
     
     <!-- http links -->
@@ -18,7 +19,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     <!-- script links -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
     <!-- title for site -->
     <title>Samuel's Portfolio</title>
 </head>
@@ -68,7 +69,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class=" col-lg-4" >
+                    <div class=" col-lg-4" data-aos="fade-right">
                         <div id="mySkill row">
                             <h2 id="nameOfWork">Front End/Client</h2>
                         </div>
@@ -89,18 +90,18 @@
 
                         </ul>
                     </div>
-                    <div class=" col-lg-4" >
+                    <div class=" col-lg-4" data-aos="zoom-in">
                         <div id="mySkill">
                             <h2 id="nameOfWork">Server Side</h2>
                         </div>
-                        <ul class="serverBlock">
+                        <ul class="serverBlock" data-aos="down">
                             <li><i id="icons" class="devicon-nodejs-plain"></i><div class="iconText">Node.js</div></li>
                             <li><i id="icons" class="devicon-express-original"></i><div class="iconText">Express.js</div></li>
                             <li><i id="icons" class="devicon-sequelize-plain"></i><div class="iconText">Sequelize</div></li>
                             <li><i id="icons" class="devicon-heroku-original"></i><div class="iconText">Heroku</div></li>
                         </ul>
                     </div>
-                    <div class=" col-lg-4" >
+                    <div class=" col-lg-4"data-aos="fade-left">
                         <div id="mySkill">
                             <h2 id="nameOfWork">Database</h2>
                         </div>
@@ -125,10 +126,6 @@
                     <h1 id="projectHeader">Projects</h1>
                 </div>
             </div>
-
-
-
-
         </section>
 
 
@@ -151,6 +148,12 @@
 <script src="./particles.min.js"></script>
 <script src="./js/app.js"></script>
 <script src="./js/script.js"></script>  
+<script src="./plugins/aos/aos.js"></script>
+<script type="text/javascript">
+    AOS.init({
+        duration: 1300
+    });
+</script>
     
 
 
