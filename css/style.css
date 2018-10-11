@@ -34,7 +34,7 @@ html{
 }
 
 #particles-js{
-  background: linear-gradient(110deg,rgb(30, 67, 132),rgb(7, 125, 138));
+  background: linear-gradient(80deg,rgb(42,72,99),rgb(63,126,172));
   width: 100%;
   position: absolute;
   top: 0;
@@ -200,7 +200,7 @@ h1::after {
 
 
 #skills{
-    background: rgb(89, 154, 145);
+    background: rgb(42,72,99);
     width:100%;
     /* position: relative; */
     padding-bottom: 60px;
@@ -209,7 +209,7 @@ h1::after {
 }
 
 #skillHeader{
-    color: rgb(50, 95, 89);
+    color: rgb(164,200,225);
     font-family: 'PT Sans', sans-serif;
     text-align: center;
     font-size: 40px;
@@ -222,7 +222,7 @@ h1::after {
     content: '';
     width: 70px;
     display: block;
-    background: rgb(167, 214, 208); 
+    background: rgb(5,236,255); 
     height: 8px;
     margin: 30px auto;    
 }
@@ -234,7 +234,7 @@ h1::after {
     margin: 0 50px;
     color:white;
     border: 1px solid;
-    border-color: rgb(181, 240, 232);   
+    border-color: rgb(164,200,225);   
     text-align: left;
     padding: 35px 35px;
     align-items: center;
@@ -248,6 +248,7 @@ h1::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 0 50px 0;
 }
 #introText{
     font-size: 40px;
@@ -260,7 +261,7 @@ h1::after {
 }
 
 #nameOfWork{
-    color: rgb(50, 95, 89);
+    color: rgb(164,200,225);
     font-family: 'PT Sans', sans-serif;
     text-align: center;
     font-size: 30px;
@@ -279,7 +280,7 @@ h1::after {
     content: '';
     width: 70px;
     display: block;
-    background: rgb(167, 214, 208); 
+    background: rgb(5,236,255); 
     height: 6px;
     margin: 20px auto;    
 }
@@ -288,7 +289,6 @@ h1::after {
     list-style: none;
     margin:0;  
     padding:0;
-
     display: flex;
     max-height: 420px;
     flex-flow: wrap column;
@@ -347,7 +347,7 @@ h1::after {
 #myProjects{
 
 
-    background: rgb(176, 225, 218);
+    background: rgb(164,200,225);
     /* height: 100%; */
     width:100%;
     position: relative;
@@ -356,7 +356,7 @@ h1::after {
 }
 
 #projectHeader{
-    color: rgb(50, 95, 89);
+    color: rgb(42,72,99);
     font-family: 'PT Sans', sans-serif;
     text-align: center;
     font-size: 40px;
@@ -368,7 +368,7 @@ h1::after {
     content: '';
     width: 70px;
     display: block;
-    background: rgb(167, 214, 208); 
+    background: rgb(42,72,99); 
     height: 8px;
     margin: 30px auto;    
 }

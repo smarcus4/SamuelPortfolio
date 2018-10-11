@@ -29,7 +29,7 @@ $(function (){
             $(this).text(greetingArr[count % greetingArr.length]).fadeIn(400);
 
         })
-    },5000)
+    },4000)
 })
 
 
