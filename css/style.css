@@ -143,6 +143,8 @@ h1::after {
     height:60px;
     width: 100%;
     background:none;
+    font-family: 'PT Sans', sans-serif;
+
     text-align: left;
     z-index: 99;
     list-style-type: none;
@@ -486,20 +488,29 @@ h1::after {
     .navBar.responsive a.icon {
       position: absolute;
       right: 0;
-      top: 0;
+      top: 0;     
+      padding:0;
     }
     .navBar.responsive a {
-      float: none;
+      float: left;
       display: block;
       text-align: left;
+      top:0;
     }
-    .links:hover{
+    /* .links:hover{
     
         font-weight: bold;
         text-decoration:none;
-        background-color: rgb(191, 191, 191);
+        background-color: rgb(124, 193, 241);
     
+    } */
+
+    .navBar a:hover{
+        font-size:1em;
+        background-color: white;
+
     }
+
 
 
 }
