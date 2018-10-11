@@ -7,11 +7,13 @@ $("#canvasBtn").addClass("animated fadeIn delay-3s");
 $("#skillHeader").addClass("animated flash");
 
 //array for different greetings to be appended.
-var greetingArr = ["Hello", "Shalom","Hola","Namaste","Ciao"]
-var randomGreeting = greetingArr[Math.floor(Math.random()*greetingArr.length)];
+// var greetingArr = ["Hello", "Shalom","Hola","Namaste","Ciao"]
+// var randomGreeting = greetingArr[Math.floor(Math.random()*greetingArr.length)];
+
 
 //var greetingText get span element by id
 var greetingText = $("#introText");
+var meOne = $("#info");
 
 
 
@@ -28,6 +30,24 @@ $(function (){
 
         })
     },5000)
+})
+
+
+$(function (){
+
+    counter = 0;
+    var whoamI = ["a pilot", "an astronomer","a cyclist","a well being advocate","a musician", "a full stack web developer"]
+    setInterval(function (){
+        counter ++;
+        if(counter<=5){
+
+        $(meOne).fadeOut(100, function(){
+            $(this).text("I am "+whoamI[counter]).fadeIn(100);
+
+            
+        })
+    }
+    },2900)
 })
 
 
