@@ -36,19 +36,29 @@ $(function (){
 $(function (){
 
     counter = 0;
-    var whoamI = ["a pilot", "an astronomer","a cyclist","a well being advocate","a musician", "a full stack web developer"]
+    var whoamI = ["a pilot", "an astronomer","a cyclist","an advocate for well being","a musician", "a full stack web developer"]
     setInterval(function (){
-        counter ++;
         if(counter<=5){
 
-        $(meOne).fadeOut(100, function(){
-            $(this).text("I am "+whoamI[counter]).fadeIn(100);
+            $(meOne).fadeOut(100, function(){
+                $(this).text("I am "+whoamI[counter]).fadeIn(100);
+                counter ++;
 
-            
-        })
-    }
+                
+            });
+        }
     },2900)
 })
+
+
+function navFunction() {
+    var x = document.getElementById("mainNav");
+    if (x.className === "navBar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navBar";
+    }
+}
 
 
 
@@ -74,6 +84,22 @@ $('#canvasBtn').click(function(){
 
     $('html, body').animate({
     scrollTop: $("#skills").offset().top
+    }, 500);
+    
+});
+
+$('#skillsBtn').click(function(){
+
+    $('html, body').animate({
+    scrollTop: $("#skills").offset().top
+    }, 500);
+    
+});
+
+$('#homeBtn').click(function(){
+
+    $('html, body').animate({
+    scrollTop: $("#cover").offset().top
     }, 500);
     
 });

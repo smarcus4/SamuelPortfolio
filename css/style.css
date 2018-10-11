@@ -34,7 +34,7 @@ html{
 }
 
 #particles-js{
-  background: linear-gradient(80deg,rgb(42,72,99),rgb(63,126,172));
+  background: linear-gradient(180deg,rgb(42,72,99),rgb(63,126,172));
   width: 100%;
   position: absolute;
   top: 0;
@@ -130,6 +130,12 @@ h1::after {
     transform:rotate(90deg);
 }
 
+.navBar .icon {
+    display: none;
+    margin-right: 30px;   
+    
+}
+
 .navBar{
     bottom:0;
     left:0;
@@ -196,6 +202,7 @@ h1::after {
 
 
 
+
 /* skills canvas section*/
 
 
@@ -248,7 +255,7 @@ h1::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0 50px 0;
+    /* padding: 50px 0 50px 0; */
 }
 #introText{
     font-size: 40px;
@@ -259,6 +266,8 @@ h1::after {
     
     
 }
+
+
 
 #nameOfWork{
     color: rgb(164,200,225);
@@ -381,7 +390,7 @@ h1::after {
 
 /* Mobile Friendly Canvas */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
     html, body  {
 
@@ -464,6 +473,32 @@ h1::after {
 
     .aboutmeText{
         margin:0;
+    }
+
+    .buttonList a {display: none;}
+    .navBar a.icon {
+      float: right;
+      display: block;
+    }
+
+
+    .navBar.responsive {position: relative;}
+    .navBar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navBar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .links:hover{
+    
+        font-weight: bold;
+        text-decoration:none;
+        background-color: rgb(191, 191, 191);
+    
     }
 
 
