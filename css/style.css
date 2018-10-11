@@ -231,7 +231,7 @@ h1::after {
 .aboutmeText{
 
     font-family: 'PT Sans', sans-serif;
-    margin:0;
+    margin: 0 50px;
     color:white;
     border: 1px solid;
     border-color: rgb(181, 240, 232);   
@@ -240,6 +240,7 @@ h1::after {
     align-items: center;
     margin-top: 90px;
 }
+
 
 .greetings  {
     text-align: center;
@@ -251,9 +252,10 @@ h1::after {
 #introText{
     font-size: 40px;
     font-weight:bold;
-    padding: 0 25px 15px 0;
+    padding: 0 60px 15px 0;
     color:rgb(181, 240, 232);
     float:left;
+    
     
 }
 
@@ -271,6 +273,7 @@ h1::after {
 #introP{
 
     font-size: 16px;
+   
 }
 #nameOfWork::after {
     content: '';

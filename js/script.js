@@ -12,7 +12,35 @@ var randomGreeting = greetingArr[Math.floor(Math.random()*greetingArr.length)];
 
 //var greetingText get span element by id
 var greetingText = $("#introText");
-$(greetingText).html(randomGreeting);
+
+
+
+//function that cycles through different greetings on 2 second intervals, fading in and out every 400 milliseconds.
+$(function (){
+
+    count = 0;
+    var greetingArr = ["Hello", "Shalom","Hola","Namaste","Ciao"];
+    setInterval(function (){
+        count ++;
+        console.log(count);
+        $(greetingText).fadeOut(400, function(){
+            $(this).text(greetingArr[count % greetingArr.length]).fadeIn(400);
+
+        })
+    },5000)
+})
+
+
+
+
+
+
+
+
+// $(greetingText).html(randomGreeting);
+
+
+
 
 
 
