@@ -677,11 +677,39 @@ color: white;
       .fadeIn-bottom{
         top: 80%;
     }
+    .content .content-overlay {
+        background: rgba(164,200,225);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+    }
   }
   
   @media screen and (min-width: 900px){
     .container{
       width: 33.33333%;
+    }
+    .content .content-overlay {
+        background: rgba(164,200,225);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
     }
     .content:hover .content-details{
         top: 50%;
