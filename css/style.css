@@ -652,11 +652,57 @@ color: white;
       display: block;
       width: 100%;
     }
+    .content:hover .content-details{
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+      
+      .content-details h3{
+        color: black;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+    }
+      
+      .content-details p{
+        color: black;
+        background: white;
+        font-size: 0.8em;
+    }
+      
+      .fadeIn-bottom{
+        top: 80%;
+    }
   }
   
   @media screen and (min-width: 900px){
     .container{
       width: 33.33333%;
+    }
+    .content:hover .content-details{
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+      
+      .content-details h3{
+        color: black;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+    }
+      
+      .content-details p{
+        color: black;
+        background: white;
+        font-size: 0.8em;
+    }
+      
+      .fadeIn-bottom{
+        top: 80%;
     }
   }
 
