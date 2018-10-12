@@ -639,7 +639,7 @@ color: white;
     .navBar a:hover{
         /* font-size:.8em; */
         background-color: rgba(5,236,255);
-        color: black;
+        color: white;
 
     }
 
@@ -651,7 +651,7 @@ color: white;
 
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 500px){
     .container{
       display: block;
       width: 100%;
@@ -659,7 +659,7 @@ color: white;
     .content:hover .content-details{
         top: 50%;
         left: 50%;
-        opacity: 1;
+        opacity: 2;
     }
       
       .content-details h3{
