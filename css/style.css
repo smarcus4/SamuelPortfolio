@@ -384,6 +384,134 @@ h1::after {
     margin: 30px auto;    
 }
 
+#projectDiv{
+    padding:0;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    width: 100%;
+    padding-bottom: 50px;
+    margin-top:100px;
+    font-size: 20px;
+
+}
+
+/* THIS IS OVERLAY CONTENT */
+.codingContainer{
+    /* padding: 1em 0; */
+    float: left;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    font-family: 'PT Sans', sans-serif;
+    margin: 25px 0 50px 0;
+
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+
+.content .content-overlay {
+    background: rgba(164,200,225);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+    opacity: 1;
+}
+  
+  .content-image{
+    width: 100%;
+}
+  
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+  
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+  
+  .content-details h3{
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+  
+  .content-details p{
+    color: black;
+    background: white;
+    font-size: 0.8em;
+}
+  
+  .fadeIn-bottom{
+    top: 80%;
+}
+/* END OVERLAYCONTENT */
+
+
+
+
+
+/* NAVBAR */
+#htmlCss #javascript #nodeJS #databases{
+    text-align:center;
+    
+}
+
+#htmlCss:hover #javascript:hover #nodeJS:hover #databases:hover{
+background: black;
+color: white;    
+}
+
+#htmlLink #jsLink #nodeLink #dataLink{
+
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -507,13 +635,30 @@ h1::after {
 
     .navBar a:hover{
         font-size:1em;
-        background-color: white;
+        background-color: rgb(231, 150, 150);
 
+    }
+
+    #projectDiv{
+        font-size: 10px;
     }
 
 
 
 }
+
+@media screen and (max-width: 640px){
+    .container{
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 900px){
+    .container{
+      width: 33.33333%;
+    }
+  }
 
 
   
