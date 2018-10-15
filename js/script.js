@@ -129,6 +129,8 @@ $(htmlButton).on("click", function(){
     jsContainer.addClass("hidden");
     nodeContainer.addClass("hidden");
     dbContainer.addClass("hidden");
+    return false;
+
     
 
 })
@@ -142,6 +144,8 @@ $(jsButton).on("click", function(){
     jsContainer.removeClass("hidden").fadeIn(500);
     nodeContainer.addClass("hidden");
     dbContainer.addClass("hidden");
+    return false;
+
     
 
 })
@@ -155,6 +159,8 @@ $(nodeButton).on("click", function(){
     jsContainer.addClass("hidden");
     nodeContainer.removeClass("hidden").fadeIn(500);
     dbContainer.addClass("hidden");
+    return false;
+
     
 })
 // DATABASE
@@ -167,6 +173,6 @@ $(dbButton).on("click", function(){
     jsContainer.addClass("hidden");
     nodeContainer.addClass("hidden");
     dbContainer.removeClass("hidden").fadeIn(500);
-    
+    return false;
 
 })
