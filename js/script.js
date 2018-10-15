@@ -112,9 +112,61 @@ $('#projectBtn').click(function(){
 // END SMOOTH SCROLL FROM CANVAS HOME TO SKILLS
 
 
-var htmlLinks = $("#htmlCss");
+// PROJECT SHUFFLE DIV CODE
+const htmlContainer = $(".htmlContent");
+const htmlButton = $("#htmlLink");
+const jsContainer = $(".javascriptContent");
+const jsButton = $("#jsLink");
+const nodeContainer = $(".nodeContent");
+const nodeButton = $("#nodeLink");
+const dbContainer = $(".databaseContent");
+const dbButton = $("#dataLink");
 
-$(htmlLinks).on("click", function(){
+$(htmlButton).on("click", function(){
+   
+    event.preventDefault();
+    htmlContainer.removeClass("hidden").fadeIn(500);
+    jsContainer.addClass("hidden");
+    nodeContainer.addClass("hidden");
+    dbContainer.addClass("hidden");
+    
 
-    $("#codingContainer").addClass("hidden");
+})
+// JAVASCRIPT
+
+
+$(jsButton).on("click", function(){
+    
+    event.preventDefault();
+    htmlContainer.addClass("hidden");
+    jsContainer.removeClass("hidden").fadeIn(500);
+    nodeContainer.addClass("hidden");
+    dbContainer.addClass("hidden");
+    
+
+})
+// NODE EXPRESS
+
+
+$(nodeButton).on("click", function(){
+   
+    event.preventDefault();
+    htmlContainer.addClass("hidden");
+    jsContainer.addClass("hidden");
+    nodeContainer.removeClass("hidden").fadeIn(500);
+    dbContainer.addClass("hidden");
+    
+})
+// DATABASE
+
+
+$(dbButton).on("click", function(){
+   
+    event.preventDefault();
+    htmlContainer.addClass("hidden");
+    jsContainer.addClass("hidden");
+    nodeContainer.addClass("hidden");
+    dbContainer.removeClass("hidden").fadeIn(500);
+    
+
 })
