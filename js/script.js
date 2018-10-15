@@ -122,14 +122,14 @@ const nodeButton = $("#nodeLink");
 const dbContainer = $(".databaseContent");
 const dbButton = $("#dataLink");
 
-$(htmlButton).on("click", function(){
+$(htmlButton).on("click", function(event){
    
-    event.preventDefault();
     htmlContainer.removeClass("hidden").fadeIn(500);
     jsContainer.addClass("hidden");
     nodeContainer.addClass("hidden");
     dbContainer.addClass("hidden");
-    return false;
+    event.preventDefault();
+
 
     
 
@@ -137,14 +137,14 @@ $(htmlButton).on("click", function(){
 // JAVASCRIPT
 
 
-$(jsButton).on("click", function(){
+$(jsButton).on("click", function(event){
     
-    event.preventDefault();
     htmlContainer.addClass("hidden");
     jsContainer.removeClass("hidden").fadeIn(500);
     nodeContainer.addClass("hidden");
     dbContainer.addClass("hidden");
-    return false;
+    event.preventDefault();
+
 
     
 
@@ -152,27 +152,27 @@ $(jsButton).on("click", function(){
 // NODE EXPRESS
 
 
-$(nodeButton).on("click", function(){
+$(nodeButton).on("click", function(event){
    
-    event.preventDefault();
     htmlContainer.addClass("hidden");
     jsContainer.addClass("hidden");
     nodeContainer.removeClass("hidden").fadeIn(500);
     dbContainer.addClass("hidden");
-    return false;
+    event.preventDefault();
+
 
     
 })
 // DATABASE
 
 
-$(dbButton).on("click", function(){
+$(dbButton).on("click", function(event){
    
-    event.preventDefault();
     htmlContainer.addClass("hidden");
     jsContainer.addClass("hidden");
     nodeContainer.addClass("hidden");
     dbContainer.removeClass("hidden").fadeIn(500);
-    return false;
+    event.preventDefault();
+
 
 })
