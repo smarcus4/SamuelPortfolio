@@ -387,7 +387,9 @@ h1::after {
 }
 
 #projectDiv{
-    padding:0;
+    padding-right:0;
+    padding-left:0;
+
     text-align: center;
     font-family: 'PT Sans', sans-serif;
     width: 100%;
@@ -396,6 +398,47 @@ h1::after {
     font-size: 20px;
 
 }
+
+
+
+.btns{
+    text-decoration: none;
+    color: #2a4863;
+    transition: ease .3s;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+.btns:hover{
+    text-decoration: none;
+    color: #38d4ff;
+    border: solid 3px #f0feff;
+    background: #001C38;
+    padding: 5px 5px;
+    cursor: pointer;
+
+}
+
+.btns:active{
+    text-decoration: none;
+    color: #38d4ff;
+    border: solid 3px #f0feff;
+    background: #001C38;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.btns:focus{
+    text-decoration: none;
+    color: #38d4ff;
+    border: solid 3px #f0feff;
+    background: #001C38;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+
 
 /* THIS IS OVERLAY CONTENT */
 .codingContainer{
@@ -413,7 +456,7 @@ h1::after {
 .content {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 700px;
     margin: auto;
     overflow: hidden;
     font-family: 'PT Sans', sans-serif;
@@ -496,19 +539,16 @@ h1::after {
 /* NAVBAR */
 #htmlCss #javascript #nodeJS #databases{
     text-align:center;
+    padding:0;
     
 }
 
 #htmlCss:hover #javascript:hover #nodeJS:hover #databases:hover{
 background: black;
-color: white;    
+color: white;   
+padding:0; 
 }
 
-#htmlLink #jsLink #nodeLink #dataLink{
-
-    text-decoration: none;
-    color: white;
-}
 
 
 
@@ -536,6 +576,8 @@ color: white;
         padding:0;    
            
     } 
+    
+    
 
     .navlist{
         padding:0;
@@ -648,6 +690,7 @@ color: white;
 
     #projectDiv{
         font-size: 10px;
+        padding: 0 !important
     }
 
 

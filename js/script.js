@@ -124,11 +124,11 @@ const dbButton = $("#dataLink");
 
 $(htmlButton).on("click", function(event){
    
-    htmlContainer.removeClass("hidden").fadeIn(500);
+    event.preventDefault();
+    htmlContainer.fadeIn(300).removeClass("hidden");
     jsContainer.addClass("hidden");
     nodeContainer.addClass("hidden");
     dbContainer.addClass("hidden");
-    event.preventDefault();
 
 
     
@@ -138,12 +138,12 @@ $(htmlButton).on("click", function(event){
 
 
 $(jsButton).on("click", function(event){
-    
+
+    event.preventDefault();
     htmlContainer.addClass("hidden");
-    jsContainer.removeClass("hidden").fadeIn(500);
+    jsContainer.fadeIn(300).removeClass("hidden");
     nodeContainer.addClass("hidden");
     dbContainer.addClass("hidden");
-    event.preventDefault();
 
 
     
@@ -154,11 +154,12 @@ $(jsButton).on("click", function(event){
 
 $(nodeButton).on("click", function(event){
    
+
+    event.preventDefault();
     htmlContainer.addClass("hidden");
     jsContainer.addClass("hidden");
-    nodeContainer.removeClass("hidden").fadeIn(500);
+    nodeContainer.fadeIn(300).removeClass("hidden");
     dbContainer.addClass("hidden");
-    event.preventDefault();
 
 
     
@@ -168,11 +169,26 @@ $(nodeButton).on("click", function(event){
 
 $(dbButton).on("click", function(event){
    
+    event.preventDefault();
     htmlContainer.addClass("hidden");
     jsContainer.addClass("hidden");
     nodeContainer.addClass("hidden");
-    dbContainer.removeClass("hidden").fadeIn(500);
-    event.preventDefault();
+    dbContainer.fadeIn(300).removeClass("hidden");
+    $(this).addClass("active");
 
 
 })
+
+
+
+//lets a button be active for when we input data?
+
+// var header = document.getElementById("projectDiv");
+// var btns = header.getElementsByClassName("btns");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
