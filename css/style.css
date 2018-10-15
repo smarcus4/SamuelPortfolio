@@ -36,6 +36,7 @@ html{
 #particles-js{
   background: linear-gradient(180deg,rgb(42,72,99),rgb(63,126,172));
   width: 100%;
+  height:100%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -211,8 +212,8 @@ h1::after {
 #skills{
     background: rgb(42,72,99);
     width:100%;
-    height: 100%;
-    position: relative;
+    /* height: 100%; */
+    /* position: relative; */
     padding-bottom: 60px;
     
     
