@@ -64,9 +64,6 @@ function navFunction() {
 
 
 
-
-
-
 // $(greetingText).html(randomGreeting);
 
 
@@ -112,6 +109,12 @@ $('#projectBtn').click(function(){
     
 });
 
+// END SMOOTH SCROLL FROM CANVAS HOME TO SKILLS
 
 
+var htmlLinks = $("#htmlCss");
 
+$(htmlLinks).on("click", function(){
+
+    $("#codingContainer").addClass("hidden");
+})

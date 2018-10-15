@@ -69,14 +69,14 @@ particlesJS('particles-js',
       },
       "move": {
         "enable": true,
-        "speed": 1,
+        "speed": 2,
         "direction": "bottom-right",
-        "random": false,
+        "random": true,
         "straight": false,
         "out_mode": "out",
         "attract": {
           "enable": true,
-          "rotateX": 1000,
+          "rotateX": 100,
           "rotateY": 1500
         }
       }

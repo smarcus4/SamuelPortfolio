@@ -211,7 +211,8 @@ h1::after {
 #skills{
     background: rgb(42,72,99);
     width:100%;
-    /* position: relative; */
+    height: 100%;
+    position: relative;
     padding-bottom: 60px;
     
     
@@ -415,6 +416,7 @@ h1::after {
     margin: auto;
     overflow: hidden;
     font-family: 'PT Sans', sans-serif;
+    margin-right: 50px;
 
 }
 
