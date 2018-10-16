@@ -2,7 +2,7 @@
 /* canvas work */
 html, body  {
 
-    height: 100vh;
+    height: 100%;
     width:100%;
     font-family: 'PT Sans', sans-serif;
     margin:0;
@@ -360,12 +360,13 @@ h1::after {
 #myProjects{
 
 
-    background: rgb(164,200,225);
-    /* height: 100%; */
+    background-color: rgb(164,200,225);
+    min-height: 100vh;
+    margin:0;
     width:100%;
     position: relative;
-    background-size: cover;
-
+    /* background-size: cover; */
+    
 }
 
 #projectHeader{
@@ -447,7 +448,6 @@ h1::after {
     width: 50%;
     display: flex;
     flex-direction: row;
-    margin:0;
     font-family: 'PT Sans', sans-serif;
     margin: 25px 0 50px 0;
 
@@ -530,6 +530,7 @@ h1::after {
 }
 
 
+
 /* END OVERLAYCONTENT */
 
 
@@ -552,6 +553,36 @@ padding:0;
 
 
 
+
+/* HOBBIES SECTION */
+
+
+#hobbies{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    background-color: #f0feff;
+
+}
+#hobbiesHeader{
+    color: #001c38;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    margin-top: 90px;
+
+}
+#hobbiesHeader::after {
+    content: '';
+    width: 70px;
+    display: block;
+    background: #001c38; 
+    height: 8px;
+    margin: 30px auto;    
+}
 
 
 

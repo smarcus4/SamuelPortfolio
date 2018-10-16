@@ -109,6 +109,14 @@ $('#projectBtn').click(function(){
     
 });
 
+$('#hobbiesBtn').click(function(){
+
+    $('html, body').animate({
+    scrollTop: $("#hobbies").offset().top
+    }, 500);
+    
+});
+
 // END SMOOTH SCROLL FROM CANVAS HOME TO SKILLS
 
 
@@ -183,12 +191,12 @@ $(dbButton).on("click", function(event){
 
 //lets a button be active for when we input data?
 
-// var header = document.getElementById("projectDiv");
-// var btns = header.getElementsByClassName("btns");
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function() {
-//     var current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//   });
-// }
+var header = document.getElementById("projectDiv");
+var btns = header.getElementsByClassName("btns");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
