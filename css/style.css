@@ -38,7 +38,7 @@ html{
   background: linear-gradient(180deg,rgb(42,72,99),rgb(63,126,172));
   width: 100%;
   height:100%;
-  position: relative;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -657,10 +657,14 @@ padding:0;
     #particles-js{
    
         position: absolute;
-        height:100%;
+        height:100vh;
         opacity: 1;
     }
     
+    #skills{
+        height: 100%;
+
+    }
 
 
 
