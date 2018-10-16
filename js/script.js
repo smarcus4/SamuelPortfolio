@@ -36,7 +36,7 @@ $(function (){
 $(function (){
 
     counter = 0;
-    var whoamI = ["a pilot", "an astronomer","a cyclist","an advocate for well being","a musician", "a full stack web developer"]
+    var whoamI = ["an aspiring pilot", "an astronomer","a cyclist","an advocate for well being","a musician", "a full stack web developer"]
     setInterval(function (){
         if(counter<=5){
 
