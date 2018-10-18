@@ -57,7 +57,7 @@ html{
     text-align: center;
     color: rgb(252, 101, 101);
     font-style: bold;
-    padding: 0px 15px;
+    padding-bottom: 15px;
     font-size: 50px;
     font-weight:bold;
 }
@@ -76,18 +76,10 @@ html{
     font-family: 'PT Sans', sans-serif;
     display: inline;
     font-size: 30px; 
-    line-height: 90px;
+    line-height: 80px;
     
 }
 
-h1::after {
-    content: '';
-    width: 70px;
-    display: block;
-    background: #fff;
-    height: 8px;
-    margin: 30px auto;    
-}
 
 #canvasMe{
     width: 150px;
@@ -141,7 +133,7 @@ h1::after {
 .navBar{
     bottom:0;
     left:0;
-    position: absolute;
+    position: fixed;
     height:60px;
     width: 100%;
     background:none;
@@ -151,10 +143,21 @@ h1::after {
     z-index: 99;
     list-style-type: none;
     transition: 0.35s all ease;
-
-   
 }
 
+.navBarScroll{
+    top:0;
+    left:0;
+    position: fixed;
+    height:60px;
+    width: 100%;
+    background:black;
+    font-family: 'PT Sans', sans-serif;
+    transition: .8s ease-in;
+    text-align: left;
+    z-index: 99;
+    list-style-type: none;
+}
 
 .buttonList{
     
@@ -365,7 +368,7 @@ h1::after {
     min-height: 100vh;
     margin:0;
     width:100%;
-    position: relative;
+    /* position: relative; */
     /* background-size: cover; */
     
 }

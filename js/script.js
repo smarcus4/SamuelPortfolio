@@ -78,7 +78,7 @@ $('.btn-lg').hover(function () {
 
 // SMOOTH SCROLL FROM CANVAS HOME TO SKILLS
 $('#canvasBtn').click(function(){
-
+    event.preventDefault();
     $('html, body').animate({
     scrollTop: $("#skills").offset().top
     }, 500);
@@ -200,3 +200,24 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+
+// SCROLL FOR NAVIGATION
+const navBar = $(".navBar");
+console.log($("#myProjects").offset().top)
+$(navBar).addClass("hidden");
+
+if ($(window).width() > 500) {      
+  
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 750 ) {
+        $(navBar).fadeIn(600).removeClass("hidden");
+        $(navBar).addClass("navBarScroll"); 
+        }   
+        else {
+        $(navBar).addClass('hidden');
+        }
+    });
+}
+
+
