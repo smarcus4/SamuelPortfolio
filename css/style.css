@@ -281,7 +281,7 @@ html{
 #introText{
     font-size: 40px;
     font-weight:bold;
-    padding: 0 60px 15px 0;
+    padding: 0 30px 60px 0;
     color:rgb(181, 240, 232);
     float:left;
     
@@ -702,10 +702,7 @@ padding:0;
       display: block;
       text-decoration: none;
     }
-    .navBarScroll{
-        visibility: hidden;
-    }
-
+  
     .navBar.responsive {position: relative;}
     .navBar.responsive a.icon {
       position: absolute;

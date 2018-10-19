@@ -15,22 +15,26 @@ $("#skillHeader").addClass("animated flash");
 var greetingText = $("#introText");
 var meOne = $("#info");
 
+var introText = $("#introText");
+
+$(introText).html("Hello");
+
 
 
 //function that cycles through different greetings on 2 second intervals, fading in and out every 400 milliseconds.
-$(function (){
+// $(function (){
 
-    count = 0;
-    var greetingArr = ["Hello", "Shalom","Hola","Namaste","Ciao"];
-    setInterval(function (){
-        count ++;
-        console.log(count);
-        $(greetingText).fadeOut(400, function(){
-            $(this).text(greetingArr[count % greetingArr.length]).fadeIn(400);
+//     count = 0;
+//     var greetingArr = ["Hello", "Shalom","Hola","Namaste","Ciao"];
+//     setInterval(function (){
+//         count ++;
+//         console.log(count);
+//         $(greetingText).fadeOut(400, function(){
+//             $(this).text(greetingArr[count % greetingArr.length]).fadeIn(400);
 
-        })
-    },4000)
-})
+//         })
+//     },4000)
+// })
 
 
 $(function (){
@@ -240,12 +244,13 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
 
-    if($(window).width() >1000){
+    if($(window).width() >0){
+
         var scrollDistance = $(window).scrollTop() +70;
 
         // if ($(window).scrollTop() > 730) {
         //     $(navBar).fadeIn(300).removeClass("hidden");
-        //     $(navBar).addClass("navBarScroll"); 
+        //     // $(navBar).addClass("navBarScroll"); 
         
         // }
 
