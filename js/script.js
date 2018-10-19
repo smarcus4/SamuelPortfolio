@@ -202,7 +202,7 @@ $(dbButton).on("click", function(event){
 // }
 
 // SCROLL FOR NAVIGATION
-const navBar = $(".navBarScroll");
+const navBar= $(".navBar")
 $(navBar).addClass("hidden");
 
 
@@ -214,6 +214,14 @@ $(navBar).addClass("hidden");
 //ALLOWS NAV TO CHANGE TO ACTIVE CLASS ON SCROLL AND ON CLICK
 
 $(document).ready(function() {
+
+    var screen = $(window);  
+
+    if (screen.width < 768) {
+        $('.navBar').removeClass('hidden');
+    } else {
+        $('.navBar').addClass('hidden');
+    }
     $('a[href*=#]').bind('click', function(e) {
             e.preventDefault(); // prevent hard jump, the default behavior
 
@@ -231,29 +239,31 @@ $(document).ready(function() {
 });
 
 $(window).scroll(function() {
-    var scrollDistance = $(window).scrollTop() +70;
 
-    // if ($(window).scrollTop() > 730) {
-    //     $(navBar).fadeIn(300).removeClass("hidden");
-    //     $(navBar).addClass("navBarScroll"); 
-    
-    // }
+    if($(window).width() >1000){
+        var scrollDistance = $(window).scrollTop() +70;
 
-    // Show/hide menu on scroll
-    if (scrollDistance >= 700) {
-            $(navBar).fadeIn(300).removeClass("hidden");
-            $(navBar).addClass("navBarScroll");
+        // if ($(window).scrollTop() > 730) {
+        //     $(navBar).fadeIn(300).removeClass("hidden");
+        //     $(navBar).addClass("navBarScroll"); 
+        
+        // }
 
-    		$(navBar).fadeIn("fast");
-    } else {
-    		$(navBar).fadeOut("fast");
+        // Show/hide menu on scroll
+        if (scrollDistance >= 700) {
+                $(navBar).fadeIn(300).removeClass("hidden");
+                // $(navBar).addClass("navBarScroll");
+
+        } else {
+            $(navBar).addClass("hidden");
+        }
+
+        // Assign active class to nav links while scolling
+        $('section').each(function(i) {
+                if ($(this).position().top <= scrollDistance) {
+                        $('.navBar a.active').removeClass('active');
+                        $('.navBar a').eq(i).addClass('active');
+                }
+        });
     }
-
-    // Assign active class to nav links while scolling
-    $('section').each(function(i) {
-            if ($(this).position().top <= scrollDistance) {
-                    $('.navBar a.active').removeClass('active');
-                    $('.navBar a').eq(i).addClass('active');
-            }
-    });
 }).scroll();

@@ -135,22 +135,23 @@ html{
     bottom:0;
     left:0;
     position: fixed;
-    height:30px;
+    height:40px;
     width: 100%;
     background:none;
     font-family: 'PT Sans', sans-serif;
-
+    background:black;
+    border-bottom: solid 2px #fff;
     text-align: left;
     z-index: 99;
     list-style-type: none;
-    transition: 0.35s all ease;
+    font-size: 15px;
 }
 
 .navBarScroll{
     top:0;
     left:0;
     position: fixed;
-    height:40px;
+    height:30px;
     width: 100%;
     background:black;
     border-bottom: solid 2px #fff;
@@ -181,7 +182,7 @@ html{
     width: 100%;
     margin: 0;
     color: white;
-    padding: 0 100px;
+    padding: 0 20px;
     font-size: 20px;
     transition: 0.35s all ease;
  
@@ -701,7 +702,9 @@ padding:0;
       display: block;
       text-decoration: none;
     }
-
+    .navBarScroll{
+        visibility: hidden;
+    }
 
     .navBar.responsive {position: relative;}
     .navBar.responsive a.icon {
