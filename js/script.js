@@ -191,33 +191,70 @@ $(dbButton).on("click", function(event){
 
 //lets a button be active for when we input data?
 
-var header = document.getElementById("projectDiv");
-var btns = header.getElementsByClassName("btns");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
 
+// var header = document.getElementById("mainNav");
+// var btns = header.getElementsByClassName("links");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
 
 // SCROLL FOR NAVIGATION
 const navBar = $(".navBar");
-console.log($("#myProjects").offset().top)
 $(navBar).addClass("hidden");
 
-if ($(window).width() > 500) {      
-  
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 750 ) {
-        $(navBar).fadeIn(600).removeClass("hidden");
-        $(navBar).addClass("navBarScroll"); 
-        }   
-        else {
-        $(navBar).addClass('hidden');
-        }
+
+
+
+
+
+
+//ALLOWS NAV TO CHANGE TO ACTIVE CLASS ON SCROLL AND ON CLICK
+
+$(document).ready(function() {
+    $('a[href*=#]').bind('click', function(e) {
+            e.preventDefault(); // prevent hard jump, the default behavior
+
+            var target = $(this).attr("href"); // Set the target as variable
+
+            // perform animated scrolling by getting top-position of target-element and set it as scroll target
+            $('html, body').stop().animate({
+                    scrollTop: $(target).offset().top
+            }, 600, function() {
+                    location.hash = target; //attach the hash (#jumptarget) to the pageurl
+            });
+
+            return false;
     });
-}
+});
 
+$(window).scroll(function() {
+    var scrollDistance = $(window).scrollTop() +70;
 
+    // if ($(window).scrollTop() > 730) {
+    //     $(navBar).fadeIn(300).removeClass("hidden");
+    //     $(navBar).addClass("navBarScroll"); 
+    
+    // }
+
+    // Show/hide menu on scroll
+    if (scrollDistance >= 700) {
+            $(navBar).fadeIn(300).removeClass("hidden");
+            $(navBar).addClass("navBarScroll");
+
+    		$(navBar).fadeIn("fast");
+    } else {
+    		$(navBar).fadeOut("fast");
+    }
+
+    // Assign active class to nav links while scolling
+    $('section').each(function(i) {
+            if ($(this).position().top <= scrollDistance) {
+                    $('.navBar a.active').removeClass('active');
+                    $('.navBar a').eq(i).addClass('active');
+            }
+    });
+}).scroll();

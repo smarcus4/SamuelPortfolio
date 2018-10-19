@@ -149,23 +149,27 @@ html{
     top:0;
     left:0;
     position: fixed;
-    height:60px;
+    height:40px;
     width: 100%;
     background:black;
+    border-bottom: solid 2px #fff;
     font-family: 'PT Sans', sans-serif;
     transition: .8s ease-in;
-    text-align: left;
+    text-align: center;
     z-index: 99;
+    font-size: 15px;
     list-style-type: none;
 }
 
 .buttonList{
     
-    top: 60px;
+    top: 40px;
     width:100%;
+    padding: 5px 0px 10px 0px;
     background: none;
     overflow:visible;
     color: white;
+   
     
 }
 
@@ -174,8 +178,9 @@ html{
    
     display:inline;
     width: 100%;
-    margin: 0 40px;
+    margin: 0;
     color: white;
+    padding: 0 100px;
     font-size: 20px;
     transition: 0.35s all ease;
  
@@ -189,6 +194,7 @@ html{
     font-family: 'PT Sans', sans-serif;
     transition: 0.2s;
     text-transform: uppercase;
+    padding-bottom: 60px;
 
 }
 
@@ -203,6 +209,8 @@ html{
 
 .links:active{
     text-decoration:none;
+    color: rgb(252, 101, 101);
+
 }
 
 
@@ -241,7 +249,10 @@ html{
     height: 8px;
     margin: 30px auto;    
 }
+.active{
+    color: rgb(252, 101, 101);
 
+}
 
 .aboutmeText{
 
