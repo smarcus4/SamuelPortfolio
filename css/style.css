@@ -131,10 +131,11 @@ html{
 }
 
 .navBar{
+    top:0;
     bottom:0;
     left:0;
     position: fixed;
-    height:60px;
+    height:30px;
     width: 100%;
     background:none;
     font-family: 'PT Sans', sans-serif;
@@ -712,6 +713,7 @@ padding:0;
     .navBar.responsive a {
       float: left;
       display: block;
+      top: 50px;
       text-align: left;
       top:0;
     }
@@ -725,8 +727,8 @@ padding:0;
 
     .navBar a:hover{
         /* font-size:.8em; */
-        background-color: rgba(5,236,255);
-        color: white;
+        color: rgb(252, 101, 101);
+        /* backgrrcolor: white; */
 
     }
 

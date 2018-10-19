@@ -182,7 +182,6 @@ $(dbButton).on("click", function(event){
     jsContainer.addClass("hidden");
     nodeContainer.addClass("hidden");
     dbContainer.fadeIn(300).removeClass("hidden");
-    $(this).addClass("active");
 
 
 })
@@ -203,7 +202,7 @@ $(dbButton).on("click", function(event){
 // }
 
 // SCROLL FOR NAVIGATION
-const navBar = $(".navBar");
+const navBar = $(".navBarScroll");
 $(navBar).addClass("hidden");
 
 
