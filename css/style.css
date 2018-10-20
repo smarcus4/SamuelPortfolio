@@ -435,7 +435,9 @@ html{
     transition: ease .3s;
     cursor: pointer;
     padding: 0;
-    background: rgba(212,245,245, .7)
+    background: rgba(212,245,245, .7);
+    transition: .7s ease
+
 }
 
 
