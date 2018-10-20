@@ -223,8 +223,11 @@ $(document).ready(function() {
 
     if (screen.width < 768) {
         $(navBar).removeClass('hidden');
+        $(navBar).fadeIn(600);
     } else {
         $('.navBar').addClass('hidden');
+        $(navBar).fadeOut(600);
+
     }
     $('a[href*=#]').bind('click', function(e) {
             e.preventDefault(); // prevent hard jump, the default behavior
@@ -246,7 +249,7 @@ $(window).scroll(function() {
 
     if($(window).width() >0){
 
-        var scrollDistance = $(window).scrollTop() +70;
+        var scrollDistance = $(window).scrollTop();
 
         // if ($(window).scrollTop() > 730) {
         //     $(navBar).fadeIn(300).removeClass("hidden");
@@ -256,6 +259,7 @@ $(window).scroll(function() {
 
         // Show/hide menu on scroll
         if (scrollDistance >= 700) {
+            event.preventDefault();
                 $(navBar).fadeIn(300).removeClass("hidden");
                 // $(navBar).addClass("navBarScroll");
 
