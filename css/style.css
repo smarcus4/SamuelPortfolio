@@ -147,7 +147,7 @@ html{
     font-size: 15px;
 }
 
-.navBarScroll{
+/* .navBarScroll{
     top:0;
     left:0;
     position: fixed;
@@ -161,7 +161,7 @@ html{
     z-index: 99;
     font-size: 15px;
     list-style-type: none;
-}
+} */
 
 .buttonList{
     
@@ -196,7 +196,6 @@ html{
     font-family: 'PT Sans', sans-serif;
     transition: 0.2s;
     text-transform: uppercase;
-    padding-bottom: 60px;
 
 }
 

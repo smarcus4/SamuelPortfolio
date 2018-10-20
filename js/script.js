@@ -222,7 +222,7 @@ $(document).ready(function() {
     var screen = $(window);  
 
     if (screen.width < 768) {
-        $('.navBar').removeClass('hidden');
+        $(navBar).removeClass('hidden');
     } else {
         $('.navBar').addClass('hidden');
     }
@@ -259,7 +259,7 @@ $(window).scroll(function() {
                 $(navBar).fadeIn(300).removeClass("hidden");
                 // $(navBar).addClass("navBarScroll");
 
-        } else {
+        } else{
             $(navBar).addClass("hidden");
         }
 
