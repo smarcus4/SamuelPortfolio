@@ -139,7 +139,7 @@ html{
     width: 100%;
     background:none;
     font-family: 'PT Sans', sans-serif;
-    background:black;
+    background:#193242;
     border-bottom: solid 2px #fff;
     text-align: left;
     z-index: 99;
@@ -167,7 +167,7 @@ html{
     
     top: 40px;
     width:100%;
-    padding: 5px 0px 10px 0px;
+    padding: 5px 0px 5px 15px;
     background: none;
     overflow:visible;
     color: white;
@@ -196,15 +196,17 @@ html{
     font-family: 'PT Sans', sans-serif;
     transition: 0.2s;
     text-transform: uppercase;
+    
 
 }
 
 
 .links:hover{
     
-    font-weight: bold;
+    /* font-weight: bold; */
     text-decoration:none;
     color: rgb(252, 101, 101);
+    border-top: solid 1.5px rgb(252, 101, 101);
 
 }
 
@@ -252,6 +254,8 @@ html{
 }
 .active{
     color: rgb(252, 101, 101);
+    border-top: solid 1.5px rgb(252, 101, 101);
+
 
 }
 
@@ -416,7 +420,14 @@ html{
 
 }
 
+.activeProject{
+    text-decoration: none;
+    color: #38d4ff;
+    background: #001C38;
+    cursor: pointer;
+    padding: 0;
 
+}
 
 .btns{
     text-decoration: none;
@@ -424,27 +435,20 @@ html{
     transition: ease .3s;
     cursor: pointer;
     padding: 0;
+    background: rgba(212,245,245, .7)
 }
 
 
 .btns:hover{
     text-decoration: none;
     color: #38d4ff;
-    border: solid 3px #f0feff;
     background: #001C38;
-    padding: 5px 5px;
     cursor: pointer;
+    padding: 0;
 
 }
 
-.btns:active{
-    text-decoration: none;
-    color: #38d4ff;
-    border: solid 3px #f0feff;
-    background: #001C38;
-    padding: 5px 5px;
-    cursor: pointer;
-}
+
 
 
 
@@ -566,7 +570,7 @@ padding:0;
 
 #hobbies{
     position: relative;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     padding: 0;
     margin:0;
@@ -646,6 +650,7 @@ padding:0;
        padding:0;
        margin:0;
    }
+
    .buttonList{
        display: inline;
        top:0;

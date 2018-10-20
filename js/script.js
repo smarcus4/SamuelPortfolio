@@ -141,6 +141,11 @@ $(htmlButton).on("click", function(event){
     jsContainer.addClass("hidden");
     nodeContainer.addClass("hidden");
     dbContainer.addClass("hidden");
+    $(this).fadeIn(300).addClass("activeProject");
+    $(this).fadeIn(300).removeClass("btns");
+    jsButton.addClass("btns");
+    nodeButton.addClass("btns");
+    dbButton.addClass("btns");
 
 
     
@@ -156,7 +161,11 @@ $(jsButton).on("click", function(event){
     jsContainer.fadeIn(300).removeClass("hidden");
     nodeContainer.addClass("hidden");
     dbContainer.addClass("hidden");
-
+    $(this).fadeIn(300).addClass("activeProject");
+    $(this).fadeIn(300).removeClass("btns");
+    htmlButton.addClass("btns");
+    nodeButton.addClass("btns");
+    dbButton.addClass("btns");
 
     
 
@@ -172,6 +181,11 @@ $(nodeButton).on("click", function(event){
     jsContainer.addClass("hidden");
     nodeContainer.fadeIn(300).removeClass("hidden");
     dbContainer.addClass("hidden");
+    $(this).fadeIn(300).addClass("activeProject");
+    $(this).fadeIn(300).removeClass("btns");
+    jsButton.addClass("btns");
+    htmlButton.addClass("btns");
+    dbButton.addClass("btns");
 
 
     
@@ -182,10 +196,19 @@ $(nodeButton).on("click", function(event){
 $(dbButton).on("click", function(event){
    
     event.preventDefault();
+
     htmlContainer.addClass("hidden");
     jsContainer.addClass("hidden");
     nodeContainer.addClass("hidden");
     dbContainer.fadeIn(300).removeClass("hidden");
+    $(this).fadeIn(300).addClass("activeProject");
+    $(this).fadeIn(300).removeClass("btns");
+    jsButton.addClass("btns");
+    nodeButton.addClass("btns");
+    htmlButton.addClass("btns");
+
+
+
 
 
 })
@@ -195,15 +218,7 @@ $(dbButton).on("click", function(event){
 //lets a button be active for when we input data?
 
 
-// var header = document.getElementById("mainNav");
-// var btns = header.getElementsByClassName("links");
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function() {
-//     var current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//   });
-// }
+
 
 // SCROLL FOR NAVIGATION
 const navBar= $(".navBar")
@@ -269,10 +284,12 @@ $(window).scroll(function() {
 
         // Assign active class to nav links while scolling
         $('section').each(function(i) {
-                if ($(this).position().top <= scrollDistance) {
+                if ($(this).position().top <= scrollDistance +70) {
                         $('.navBar a.active').removeClass('active');
                         $('.navBar a').eq(i).addClass('active');
                 }
         });
     }
 }).scroll();
+
+
