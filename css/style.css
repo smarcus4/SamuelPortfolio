@@ -679,12 +679,12 @@ padding:0;
        margin:0;
    }
 
-   .buttonList{
+   /* .buttonList{
        display: inline;
        top:0;
        position: fixed;
        background: black; 
-    }
+    } */
     #canvasMe{
         width: 100px;
     }
