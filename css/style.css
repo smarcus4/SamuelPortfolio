@@ -679,12 +679,11 @@ padding:0;
        margin:0;
    }
 
-   /* .buttonList{
-       display: inline;
+   .buttonList{
        top:0;
        position: fixed;
-       background: black; 
-    } */
+       background: #193242;
+    }
     #canvasMe{
         width: 100px;
     }
