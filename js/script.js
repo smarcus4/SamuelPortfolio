@@ -242,12 +242,12 @@ $(navBar).addClass("hidden");
 
 $(document).ready(function() {
 
-    var screen = $(window);  
+    const screen = $(window);  
 
     if (screen.width < 768) {
         $(navBar).removeClass('hidden');
         $(navBar).fadeIn(600);
-    } else {
+    } else if(screen.width > 768) {
         $('.navBar').addClass('hidden');
         $(navBar).fadeOut(600);
 
@@ -286,8 +286,11 @@ $(window).scroll(function() {
                 $(navBar).fadeIn(300).removeClass("hidden");
                 // $(navBar).addClass("navBarScroll");
 
-        } else{
+        } else if($(window).width() <700){
+            $(navBar).removeClass("hidden");
+        }else{
             $(navBar).addClass("hidden");
+
         }
 
         // Assign active class to nav links while scolling
