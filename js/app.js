@@ -64,6 +64,9 @@ particlesJS('particles-js',
         "enable": false,
         "distance": 10,
         "color": "#0FF866",
+        // "color":{
+        //   "value":["#05ffe0","#0FF866"],
+        // },
         "opacity": 0.4,
         "width": 1
       },

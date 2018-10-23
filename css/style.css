@@ -68,7 +68,7 @@ html{
     position: absolute;
     left: 0;
     padding: 0;
-    margin-top:50px;
+    margin-top:100px;
     justify-content: center;
     display: flex;
     color: white;
@@ -206,7 +206,7 @@ html{
     /* font-weight: bold; */
     text-decoration:none;
     color: rgb(252, 101, 101);
-    border-top: solid 1.5px rgb(252, 101, 101);
+    /* border-top: solid 1.5px rgb(252, 101, 101); */
 
 }
 
@@ -254,7 +254,7 @@ html{
 }
 .active{
     color: rgb(252, 101, 101);
-    border-top: solid 1.5px rgb(252, 101, 101);
+    /* border-top: solid 1.5px rgb(252, 101, 101); */
 
 
 }
@@ -284,7 +284,7 @@ html{
 #introText{
     font-size: 40px;
     font-weight:bold;
-    padding: 0 30px 60px 0;
+    padding: 0 30px 20px 0;
     color:rgb(181, 240, 232);
     float:left;
     
@@ -602,6 +602,32 @@ padding:0;
 
 
 
+/* CONTACT SECTION */
+
+#contact{
+    height:100vh;
+    width:100%;
+    background-color:#4f7cac;
+}
+#contactHeader{
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    margin-top: 90px;
+
+}
+#contactHeader::after {
+    content: '';
+    width: 70px;
+    display: block;
+    background: #ffffff; 
+    height: 8px;
+    margin: 30px auto;    
+}
+
+
 
 
 
@@ -640,7 +666,7 @@ padding:0;
 
    #text{
        font-size:20px;
-       margin-top: 30px;
+       margin-top: 50px;
        /* width: 100%; */
    }
    #myName{

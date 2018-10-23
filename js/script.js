@@ -105,6 +105,14 @@ $('#homeBtn').click(function(){
     
 });
 
+$('#contactBtn').click(function(){
+
+    $('html, body').animate({
+    scrollTop: $("#contact").offset().top
+    }, 500);
+    
+});
+
 $('#projectBtn').click(function(){
 
     $('html, body').animate({
