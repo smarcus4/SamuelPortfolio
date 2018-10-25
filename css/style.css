@@ -250,7 +250,7 @@ html{
     display: block;
     background: rgb(5,236,255); 
     height: 8px;
-    margin: 30px auto;    
+    margin: 10px auto;    
 }
 .active{
     color: rgb(252, 101, 101);
@@ -275,7 +275,7 @@ html{
 
 .greetings  {
     text-align: center;
-    margin:0;
+    margin-top:50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -404,7 +404,7 @@ html{
     display: block;
     background: rgb(42,72,99); 
     height: 8px;
-    margin: 30px auto;    
+    margin: 10px auto;    
 }
 
 #projectDiv{
@@ -594,7 +594,7 @@ padding:0;
     display: block;
     background: #001c38; 
     height: 8px;
-    margin: 30px auto;    
+    margin: 10px auto;    
 }
 
 
