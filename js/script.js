@@ -97,6 +97,14 @@ $('#skillsBtn').click(function(){
     
 });
 
+$('#arrowHome').click(function(){
+
+    $('html, body').animate({
+    scrollTop: $("#cover").offset().top
+    }, 500);
+    
+});
+
 $('#homeBtn').click(function(){
 
     $('html, body').animate({
