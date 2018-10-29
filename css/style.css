@@ -614,20 +614,22 @@ padding:0;
     text-align: center;
     margin-top: 85px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pics{
     
-    border-radius: 20%;
+    border-radius: 10%;
     width: 200px;
     padding: 15px;
-    display: inline;
 }
 
 
 #hobbies{
     position: relative;
-    height: 100vh;
+    /* height: 100%; */
     width: 100%;
     padding-bottom: 20px;
     margin:0;
@@ -836,7 +838,7 @@ footer{
     } 
 
     #hobbies{
-        height:100%;
+        /* height:100%; */
         padding-bottom: 20px;
 
     }
