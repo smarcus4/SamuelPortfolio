@@ -290,7 +290,6 @@ $(window).scroll(function() {
 
         // Show/hide menu on scroll
         if (scrollDistance >= 700) {
-            event.preventDefault();
                 $(navBar).fadeIn(300).removeClass("hidden");
                 // $(navBar).addClass("navBarScroll");
 
@@ -312,3 +311,50 @@ $(window).scroll(function() {
 }).scroll();
 
 
+// HOBBY ON CLICK FUNCTIONALITY
+const airplane = $(".airplane-div");
+const telescope = $(".telescope-div");
+const cycling = $(".cycling-div");
+const piano = $(".piano-div");
+const gaming = $(".videogames-div");
+
+$("#airplane").on("click", function(){
+    airplane.removeClass("hidden");
+    telescope.addClass("hidden");
+    cycling.addClass("hidden");
+    piano.addClass("hidden");
+    gaming.addClass("hidden");
+
+});
+$("#telescope").on("click", function(){
+    airplane.addClass("hidden");
+    telescope.removeClass("hidden");
+    cycling.addClass("hidden");
+    piano.addClass("hidden");
+    gaming.addClass("hidden");
+
+});
+$("#cycling").on("click", function(){
+    airplane.addClass("hidden");
+    telescope.addClass("hidden");
+    cycling.removeClass("hidden");
+    piano.addClass("hidden");
+    gaming.addClass("hidden");
+
+});
+$("#piano").on("click", function(){
+    airplane.addClass("hidden");
+    telescope.addClass("hidden");
+    cycling.addClass("hidden");
+    piano.removeClass("hidden");
+    gaming.addClass("hidden");
+
+});
+$("#videogames").on("click", function(){
+    airplane.addClass("hidden");
+    telescope.addClass("hidden");
+    cycling.addClass("hidden");
+    piano.addClass("hidden");
+    gaming.removeClass("hidden");
+
+});
