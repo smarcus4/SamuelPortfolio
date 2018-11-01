@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1' />    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Hosted links -->
+    <link rel="stylesheet" type="text/css" href="./plugins/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="images/png" sizes="32x32" href="./images/realFav.png">
+
+    
+    <!-- http links -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- script links -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
+    <!-- title for site -->
+    <title>Samuel's Portfolio</title>
+</head>
+<body>
+   
+    <section class="section" id="cover">
+        <div id="particles-js"></div>
+        <div class="container-fluid">
+            <div id="row">
+                <div id="text" class="col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1">
+                    <!-- <p id="hello">Hello, my name is</p> -->
+                    <h1 id="myName">Samuel Marcus</h1>
+                    <img id="canvasMe" src="./images/aboutme.jpg" alt="canvasphoto"/>
+                    <p id="info"></p>
+                    <a href="#skills"><button class="btn btn-lg" id="canvasBtn">Learn More<i id ="arrow"class="fas fa-angle-right rotate"></i></button></a>
+                </div>
+            </div>
+        </div>
+        <div class="navBar" id="mainNav">
+            <ul class="buttonList">
+                <li class="navlist"><a id="homeBtn"class="links" href="#Home">Home</a></li>
+                <li class="navlist"><a id="skillsBtn" class= "links active" href="#skills">Skills</a></li>
+                <li class="navlist"><a id="projectBtn" class= "links" href="#myProjects">Projects</a></li>
+                <li class="navlist"><a id="hobbiesBtn"class= "links" href="#hobbies">Hobbies</a></li>
+                <li class="navlist"><a id="contactBtn" class= "links" href="#contact">Contact</a></li>
+                <li class="navlist"><a href="javascript:void(0);" class="icon" onclick="navFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a></li>
+            </ul>
+        </div>    
+    </section>
+            <!-- SKILLS SECTION -->
+        <section class="section"  id="skills">
+            <div class="container-fluid">
+                <div id="mySkill row"  data-aos="zoom-in">
+                    <h1 id="skillHeader">Skills</h1>
+                </div>
+                <div class="row col-lg-12 greetings"  data-aos="zoom-in">
+                    <div class="aboutmeText col-lg-6">
+                        <span id="introText"></span> 
+                        <p id="introP">I am a full stack developer from the Northern Virginia town of Herndon.
+                        I love learning new frameworks, web development technologies, and finding new creative ways to display information and data.
+                        I enjoy biking, astronomy, aviation, playing piano, and playing video or board games with friends and family!
+                        I went to George Mason University for my B.A. and received my Web Development Certificate from The George Washington University.</p> 
+                           
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" col-lg-4">
+                        <div id="mySkill row" data-aos="flip-down">
+                            <h2 id="nameOfWork">Front End/Client</h2>
+                        </div>
+                        <ul class="frontBlock"  data-aos="zoom-in">
+                         
+                            <li><i id="icons" class="devicon-html5-plain-wordmark"></i><div class="iconText">HTML</div></li>
+                            <li><i id="icons" class="devicon-javascript-plain"></i><div class="iconText">Javascript</div></li>
+                            <li><i id="icons" class="devicon-css3-plain-wordmark"></i><div class="iconText">CSS</div></li>
+                            <li><i id="icons" class="devicon-jquery-plain"></i><div class="iconText">JQuery</div></li>
+                            <li><i id="icons" class="devicon-bootstrap-plain"></i><div class="iconText">Bootstrap</div></li>
+                            <li><i id="icons" class="devicon-git-plain"></i><div class="iconText">Git</div></li>
+                            <li><i id="icons" class="devicon-github-plain"></i><div class="iconText">Github</div></li>
+                            <li><i id="icons" class="devicon-react-original"></i><div class="iconText">React.js</div></li>
+                            <li><i id="icons" class="devicon-drupal-plain"></i><div class="iconText">Drupal</div></li>
+                            <li><i id="icons" class="devicon-wordpress-plain"></i><div class="iconText">Wordpress</div></li>
+                            <li><i id="icons" class="devicon-mocha-plain"></i><div class="iconText">Mocha</div></li>
+
+
+                        </ul>
+                    </div>
+                    <div class=" col-lg-4">
+                        <div id="mySkill" data-aos="flip-down">
+                            <h2 id="nameOfWork">Server Side</h2>
+                        </div>
+                        <ul class="serverBlock" data-aos="zoom-in">
+                            <li><i id="icons" class="devicon-nodejs-plain"></i><div class="iconText">Node.js</div></li>
+                            <li><i id="icons" class="devicon-express-original"></i><div class="iconText">Express.js</div></li>
+                            <li><i id="icons" class="devicon-sequelize-plain"></i><div class="iconText">Sequelize</div></li>
+                            <li><i id="icons" class="devicon-heroku-original"></i><div class="iconText">Heroku</div></li>
+                        </ul>
+                    </div>
+                    <div class=" col-lg-4">
+                        <div id="mySkill" data-aos="flip-down">
+                            <h2 id="nameOfWork">Database</h2>
+                        </div>
+                        <ul class="dataBlock" data-aos="zoom-in">
+                            <li><i id="icons" class="devicon-mongodb-plain"></i><div class="iconText">MongoDB</div></li>
+                            <li><i id="icons" class="devicon-mysql-plain"></i><div class="iconText">MySQL</div></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+                    
+        </section>
+    
+
+        <!-- PROJECTS SECTION -->
+        <section class="section" id="myProjects">
+            <div class="container">
+                <div  id="mySkill row">
+                    <h1 id="projectHeader" data-aos="flip-down">Projects</h1>
+                </div>
+                <div class="row" id="projectDiv"  data-aos="zoom-in">
+                    <div id="htmlCss" class="col-md-3 col-xs-3"><div id="htmlLink" class="activeProject">HTML/CSS</div></div>
+                    <div id="javascript" class="col-md-3 col-xs-3"><div id="jsLink" class="btns" >Javascript</div></div>
+                    <div id="nodeJs" class="col-md-3 col-xs-3"><div id="nodeLink" class="btns" >Server</div></div>
+                    <div id="databases" class="col-md-3 col-xs-3"><div id="dataLink" class="btns">Database</div></div>
+                </div>
+                <!-- HTML CODE PROJECTS -->
+                <div class="htmlContent" data-aos="zoom-in">
+                    <div class="container codingContainer" data-aos="zoom-in">
+                        <div class="content">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="./images/pk4kids.png">
+                            <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Piano Keys for Kids</h3>
+                            <p class="content-text">WordPress Website with plugins for email, design, and responsiveness</p>
+                            <a href="https://pk4kids.com" target="_blank"><button id="canvasBtn">Learn More</button></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="./images/basicportfolio.png">
+                            <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">HTML/CSS Portfolio</h3>
+                            <p class="content-text">Basic Portfolio using HTML/CSS</p>
+                            <a href="https://smarcus4.github.io/Basic-Portfolio/" target="_blank"><button id="canvasBtn">Learn More</button></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="./images/responsiveportoflio.png">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Responsive Portfolio</h3>
+                                <p class="content-text">A Responsive Portfolio using media queries</p>
+                                <a href="https://smarcus4.github.io/Responsive-Portfolio/" target="_blank"><button id="canvasBtn">Learn More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- JAVASCRIPT PROJECT DIVS -->
+                <div class="javascriptContent hidden" data-aos="zoom-in">                
+                    <div class="container codingContainer" data-aos="zoom-in">
+                        <div class="content">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="./images/fifaworldcup.png">
+                            <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">FIFA World Cup Application</h3>
+                            <p class="content-text">FIFA World Cup themed website using API calls to update scores & stats</p>
+                            <a href="https://ijeli.github.io/The-Dirty-Commit-and-the-Git-Push-Squad-/" target="_blank"><button id="canvasBtn">Learn More</button></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="./images/triviaastronomy.png">
+                            <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Astronomy Trivia Game</h3>
+                            <p class="content-text">Javascript based trivia game with questions on astronomy!</p>
+                            <a href="https://smarcus4.github.io/TriviaGame/" target="_blank"><button id="canvasBtn">Learn More</button></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="./images/unit4game.png">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Crystal Collector, an event based math game</h3>
+                                <p class="content-text">A math based event click game to match the random number with your score ticker</p>
+                                <a href="https://smarcus4.github.io/unit-4-game/" target="_blank"><button id="canvasBtn">Learn More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nodeContent hidden" data-aos="zoom-in">
+                    <div class="container codingContainer" data-aos="zoom-in">
+                        <div class="content">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="./images/btmbrawlers.png">
+                            <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">BTM Brawlers Website Application Game</h3>
+                            <p class="content-text">Select from 4 different heroes to fight crime and upgrade items!</p>
+                            <a href="https://btmbrawler.herokuapp.com/" target="_blank"><button id="canvasBtn">Learn More</button></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="./images/burger.png">
+                            <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Eat the Burger Web Application</h3>
+                            <p class="content-text">Add different burgers and consume them in this menu layout web app</p>
+                            <a href="https://github.com/smarcus4/burger" target="_blank"><button id="canvasBtn">Learn More</button></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="./images/friendfinder.png">
+                            <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Friend Finder Web Application</h3>
+                                <p class="content-text">Take a survey, upload a photo and see which friends you match with!</p>
+                                <a href="https://fathomless-brushlands-14231.herokuapp.com/" target="_blank"><button id="canvasBtn">Learn More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="databaseContent hidden" data-aos="zoom-in">
+                    <div class="container codingContainer" data-aos="zoom-in">
+                            <div class="content">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="./images/mongoscraper.png">
+                                <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Mongo Scraper</h3>
+                                <p class="content-text">An NY Times MongoDB scraper for articles</p>
+                                <a href="https://salty-sea-14720.herokuapp.com/" target="_blank"><button id="canvasBtn">Learn More</button></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="./images/trainactivity.png">
+                                <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Train Tracker</h3>
+                                <p class="content-text">Firebase web application for adding and tracking trains</p>
+                                <a href="https://smarcus4.github.io/TrainActivity/" target="_blank"><button id="canvasBtn">Learn More</button></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="./images/bamazon.gif">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">Bamazon Inventory Stock Organizer</h3>
+                                    <p class="content-text">Using MySQL to store items, use this application to update and search through items along with other functionality</p>
+                                    <a href="https://github.com/smarcus4/bamazon" target="_blank"><button id="canvasBtn">Learn More</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- HOBBIES DIV -->
+        <section class="section"  id="hobbies">
+            <div class="container">
+                <div id="mySkill row">
+                    <h1 id="hobbiesHeader" data-aos="flip-down">Hobbies</h1>
+                </div>
+                <div class="row hobbyIcons">
+                    <div class="col-lg-12 col-xs-12 hobbiePics">
+                        <img src="./images/airplane.png" class="pics" id="airplane"  alt="air plane clipart" data-aos="zoom-in" data-aos-delay="50"/>
+                        <img src="./images/telescope.png" class="pics" id="telescope" alt="telescope clipart" data-aos="zoom-in" data-aos-delay="200" />
+                        <img src="./images/cycling.png" class="pics" id="cycling" alt="road cycling bicyclist" data-aos="zoom-in" data-aos-delay="300" />
+                        <img src="./images/piano.png" class="pics" id="piano" alt="piano clipart image" data-aos="zoom-in" data-aos-delay="400" />
+                        <img src="./images/videogames.png" class="pics" id="videogames" alt="video game clip art controller" data-aos="zoom-in" data-aos-delay="550"/>
+                    </div>
+                </div>
+                <div class="row airplane-div hidden">
+                    <div class="col-lg-12">
+                        <div class="col-lg-5">
+                            <img class="divImage" src="./images/aviation.gif" alt="aviation gif "/>
+                            <img class="divImage" src="./images/flying.jpg" alt="still cessna image"/>
+                            <img class="divImage" src="./images/turning.gif" alt="turning archer gif"/>
+                            <img class="divImage" src="./images/cockpit.gif" alt="cockpit sped up gif"/>
+                        </div>
+                        <div class="col-lg-7">
+                            <h2>Cessna-152 & Cessna-172</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>Piper Archer</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>Confidence</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>Maneuvering</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row telescope-div hidden">
+                    <div class="col-lg-12">
+                        <div class="col-lg-6">
+                            <img class="divImage" src="./images/moonimage.jpg" width="200px"/>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2>Solar System Knowledge</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>Galactic Knowledge</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>My Telescope Rating</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>Imaging</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row cycling-div hidden">
+                    <div class="col-lg-12">
+                        <div class="col-lg-6">
+                            <img class="divImage" src="./images/aviation.gif" width="200px"/>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2>Speed</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>Distance</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>Skill Level</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>Road Biking</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row piano-div hidden">
+                    <div class="col-lg-12">
+                        <div class="col-lg-5">
+                            <img class="divImage" src="./images/trophies.jpg" />
+                            <img class="divImage" src="./images/midi.jpg" />
+                            <img class="divImage" src="./images/classicpiano.jpg" />
+
+                        </div>
+                        <div class="col-lg-7">
+                            <h2>Experience</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <h2>Bitwig</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>MIDI</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>Classical</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row videogames-div hidden">
+                    <div class="col-lg-12">
+                        <div class="col-lg-5">
+                            <img class="divImage" src="./images/fifa.png"/>
+                            <img class="divImage" src="./images/overwatch.jpg"/>
+                            <img class="divImage" src="./images/rainbowsix.jpg" />
+                            <img class="divImage" src="./images/league.png" />
+
+                        </div>
+                        <div class="col-lg-7">
+                            <h2>Overwatch</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>League of Legends</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>FIFA</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <h2>Rainbow Six</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </section>
+
+        <!-- CONTACT DIV -->
+        <section class="section"  id="contact">
+            <div class="container">
+                <div id="mySkill row">
+                    <h1 id="contactHeader" data-aos="flip-down">Contact</h1>
+                </div>
+                <div class="row">
+                    <div class="contactHeader" data-aos="zoom-in">
+                        <p id="contactHeadingText">Use the form below to reach out to me with questions or to work on projects together!</p>
+                        <p id="contactHeadingText">Send me a direct email at <span id="myEmail">smarcus4@gmu.edu</span></p>
+                    </div>
+                </div>
+                <div class="row formSection" data-aos="zoom-in">
+                    
+                    <form class="contactMe" method="POST" action="/send">
+                        <p id="errorMessage"</p>
+                        <!-- <span class="formCat">Name</span><br> -->
+                        <input type="text" name="name" id="name" placeholder="Enter your name" class="formControl"><br>
+                        <!-- <span class="formCat">Email</span><br> --><br>
+                        <input type="text" name="email" id="email" placeholder="Email@email.com" class="formControl"><br>
+                        <!-- <span class="formCat">Message</span><br> --><br>
+                        <textarea type="text" name="message" id="message" placeholder="Write me a message here!" class="formControl"></textarea><br>
+                        <div class="success hidden">Form successfully submitted!</div>
+                        <div class="failure hidden">Please fill out all fields before submitting!</div>
+                        <input type="submit" value="Submit" id="submitButton">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footingWrapper">
+                <div id="faviconArrow">
+                    <i id= "arrowHome" class="fas fa-arrow-alt-circle-up"></i>  
+                </div>
+                <div id="faviconLinks">
+                    <a href="https://www.linkedin.com/in/smarcus4/" target="_blank"><i class="fab fa-linkedin-in linking"></i> </a>    
+                    <a href="https://github.com/smarcus4" target="_blank"><i class="fab fa-github linking"></i></a> 
+                   
+                </div>
+                Website built by Samuel Marcus &copy;
+            </div>
+
+        </footer>
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+<!-- scripts -->
+<script src="./particles.js"></script>
+<script src="./particles.min.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/script.js"></script>  
+<script src="./plugins/aos/aos.js"></script>
+<script type="text/javascript">
+    AOS.init({
+        duration: 1200
+    });
+</script>
+    
+
+
+
+</body>
+</html>

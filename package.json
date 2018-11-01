@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/smarcus4/SamuelPortfolio/issues"
   },
-  "homepage": "https://github.com/smarcus4/SamuelPortfolio#readme"
+  "homepage": "https://github.com/smarcus4/SamuelPortfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "nodemailer": "^4.6.8",
+    "path": "^0.12.7"
+  }
 }
