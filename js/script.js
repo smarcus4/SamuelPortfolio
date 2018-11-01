@@ -318,17 +318,18 @@ const cycling = $(".cycling-div");
 const piano = $(".piano-div");
 const gaming = $(".videogames-div");
 
-$("#airplane").on("click", function(){
-    airplane.removeClass("hidden");
+$("#airplane").on("click", function(e){
+    airplane.removeClass("hidden").fadeIn(500);
     telescope.addClass("hidden");
     cycling.addClass("hidden");
     piano.addClass("hidden");
     gaming.addClass("hidden");
+    e.preventDefault();
 
 });
 $("#telescope").on("click", function(){
     airplane.addClass("hidden");
-    telescope.removeClass("hidden");
+    telescope.removeClass("hidden").fadeIn(500);
     cycling.addClass("hidden");
     piano.addClass("hidden");
     gaming.addClass("hidden");
@@ -337,7 +338,7 @@ $("#telescope").on("click", function(){
 $("#cycling").on("click", function(){
     airplane.addClass("hidden");
     telescope.addClass("hidden");
-    cycling.removeClass("hidden");
+    cycling.removeClass("hidden").fadeIn(500);
     piano.addClass("hidden");
     gaming.addClass("hidden");
 
@@ -346,7 +347,7 @@ $("#piano").on("click", function(){
     airplane.addClass("hidden");
     telescope.addClass("hidden");
     cycling.addClass("hidden");
-    piano.removeClass("hidden");
+    piano.removeClass("hidden").fadeIn(500);
     gaming.addClass("hidden");
 
 });
@@ -355,7 +356,7 @@ $("#videogames").on("click", function(){
     telescope.addClass("hidden");
     cycling.addClass("hidden");
     piano.addClass("hidden");
-    gaming.removeClass("hidden");
+    gaming.removeClass("hidden").fadeIn(500);
 
 });
 

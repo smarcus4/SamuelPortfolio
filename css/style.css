@@ -683,7 +683,26 @@ padding:0;
 
 /* CONTACT SECTION */
 
-.success{
+hr{
+    width: 200px;
+}
+.fa-file-alt{
+    color: white;
+    font-size: 25px;
+};
+
+#resume{
+    text-decoration: none;    
+    transition: .9s;
+
+}
+
+#resume:hover{
+    color: rgb(252, 101, 101);
+    text-decoration: none;
+
+}
+/* .success{
     background-color:#3acd7f;
     border: solid 1px #dcef9e;
     color: white;
@@ -699,7 +718,7 @@ padding:0;
     width: 30%;
     text-align: center;
     text-transform: uppercase;
-}
+} */
 
 #myEmail{
     color: 	#16c6f4;
@@ -720,7 +739,7 @@ padding:0;
     color: #ffffff;
     font-family: 'PT Sans', sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     padding-top: 20px;
     margin-top: 90px;
 
