@@ -363,23 +363,23 @@ $("#videogames").on("click", function(){
 
 
 // FORM SUBMISSION
-const success = $(".success");
-const failure = $(".failure");
+
 const name = $("#name").value;
 const email = $("#email").value;
 const message = $("#message").value;
 
 $("#submitButton").submit(function(e){
     if(name =="" || email=="" || message==""){
-
+        console.log("error");
         alertify.error("Please check your entries");
         e.preventDefault();
+
     }else {
 
+        e.preventDefault(); 
 
         // $(this).get(0).reset();
         alertify.success("Message was successfully sent! ");
-        e.preventDefault(); 
 
     }
 
