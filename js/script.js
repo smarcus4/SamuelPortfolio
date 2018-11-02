@@ -87,6 +87,7 @@ $('#canvasBtn').click(function(){
     scrollTop: $("#skills").offset().top
     }, 500);
     
+    
 });
 
 $('#skillsBtn').click(function(){
@@ -361,14 +362,32 @@ $("#videogames").on("click", function(){
 });
 
 
-FORM SUBMISSION
+// FORM SUBMISSION
 const success = $(".success");
 const failure = $(".failure");
 const name = $("#name");
 const email = $("#email");
 const message = $("#message");
 
-$("#submitButton").on("click", function(){
-      failure.removeClass("hidden");
+$("#submitButton").on("click", function(e){
+    if(!name.value || !email.value || !message.value){
+
+        alertify.error("Please check your entries");
+        return false
+    }else{
+
+        $(this).get(0).reset()
+        alertify.success("Message was successfully sent! ")
+        e.preventDefault(); 
+        return true
+
+
     }
+   
+ 
+
+    
 });
+
+
+
