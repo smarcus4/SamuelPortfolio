@@ -365,28 +365,26 @@ $("#videogames").on("click", function(){
 // FORM SUBMISSION
 const success = $(".success");
 const failure = $(".failure");
-const name = $("#name");
-const email = $("#email");
-const message = $("#message");
+const name = $("#name").value;
+const email = $("#email").value;
+const message = $("#message").value;
 
-$("#submitButton").on("click", function(e){
-    if(!name.value || !email.value || !message.value){
+$("#submitButton").submit(function(e){
+    if(name =="" || email=="" || message==""){
 
         alertify.error("Please check your entries");
-        return false
-    }else{
+        e.preventDefault();
+    }else {
 
-        $(this).get(0).reset()
-        alertify.success("Message was successfully sent! ")
+
+        // $(this).get(0).reset();
+        alertify.success("Message was successfully sent! ");
         e.preventDefault(); 
-        return true
-
 
     }
-   
- 
 
-    
+  
+
 });
 
 
