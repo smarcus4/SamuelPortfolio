@@ -364,26 +364,28 @@ $("#videogames").on("click", function(){
 
 // FORM SUBMISSION
 
-const name = $("#name").value;
-const email = $("#email").value;
-const message = $("#message").value;
 
-$("#submitButton").submit(function(e){
-    if(name =="" || email=="" || message==""){
+
+$("#submitButton").on("click",function(e){
+
+    const name = $(".name").val();
+    const email = $(".email").val();
+    const message = $(".message").val();    
+    if(!name || !email || !message){
+
         console.log("error");
-        alertify.error("Please check your entries");
+        alertify.error("Please fill out all entries! Thank you!");
         e.preventDefault();
+
 
     }else {
 
-        e.preventDefault(); 
-
         // $(this).get(0).reset();
-        alertify.success("Message was successfully sent! ");
+        alertify.success("Message was successfully sent! Thank you!");
+
 
     }
 
-  
 
 });
 
