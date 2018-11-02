@@ -361,15 +361,14 @@ $("#videogames").on("click", function(){
 });
 
 
-// FORM SUBMISSION
-// const success = $(".success");
-// const failure = $(".failure");
-// const name = $("#name");
-// const email = $("#email");
-// const message = $("#message");
+FORM SUBMISSION
+const success = $(".success");
+const failure = $(".failure");
+const name = $("#name");
+const email = $("#email");
+const message = $("#message");
 
-// $("#submitButton").on("click", function(){
-//     if(name === "" || email==="" || message===""){
-//         failure.removeClass("hidden");
-//     }
-// });
+$("#submitButton").on("click", function(){
+      failure.removeClass("hidden");
+    }
+});
