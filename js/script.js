@@ -1,10 +1,9 @@
 // load in effects for canvas
 $("#hello").addClass("animated fadeIn");
-$("#myName").addClass("animated fadeIn delay-1s");
-$("#canvasMe").addClass("animated fadeIn delay-2s");
-$("#info").addClass("animated fadeIn delay-3s");
-$("#canvasBtn").addClass("animated fadeIn delay-3s");
-$("#skillHeader").addClass("animated flash");
+$("#myName").addClass("animated fadeIn delay-.5s");
+$("#canvasMe").addClass("animated fadeIn delay-1s");
+$("#info").addClass("animated fadeIn delay-2s");
+$("#canvasBtn").addClass("animated fadeIn delay-2s");
 
 //array for different greetings to be appended.
 // var greetingArr = ["Hello", "Shalom","Hola","Namaste","Ciao"]
@@ -51,7 +50,7 @@ $(function (){
                 
             });
         }
-    },2900)
+    },1900)
 })
 
 
