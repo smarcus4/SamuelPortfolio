@@ -1053,8 +1053,8 @@ footer{
         padding: 0 !important
     }
     .divImage{
-        width: 70px;
-        height: 68px;
+        width: 100px;
+        height: 108px;
         padding:0;
         font-size: 12px;
         
@@ -1070,6 +1070,12 @@ footer{
 }
 
 @media screen and (max-width: 500px){
+
+
+    .hobby-description{
+    font-size: 10px;
+    }
+    
     .container{
       display: block;
       width: 100%;
