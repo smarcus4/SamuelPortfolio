@@ -1055,9 +1055,11 @@ footer{
     }
     .divImage{
         width: 100px;
-        height: 108px;
+        /* height: 108px; */
         padding:0;
+        display: inline;
         font-size: 14px;
+        text-align: center;
         
     }
     
