@@ -378,6 +378,10 @@ html{
 
 /* PROJECTS SECTION */
 
+.content-title{
+    font-size: 36px;
+}
+
 #myProjects{
 
 
@@ -527,7 +531,7 @@ html{
   
   .content-details h3{
     color: black;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.15em;
     margin-bottom: 0.5em;
     text-transform: uppercase;
@@ -536,7 +540,7 @@ html{
   .content-details p{
     color: black;
     background: white;
-    font-size: 0.8em;
+    font-size: 1.9em;
 }
   
   .fadeIn-bottom{
@@ -1094,6 +1098,7 @@ footer{
         font-weight: 500;
         letter-spacing: 0.15em;
         margin-bottom: 0.5em;
+        font-size: 25px;
         text-transform: uppercase;
     }
       
@@ -1130,13 +1135,21 @@ footer{
       .content-details p{
         color: black;
         background: white;
-        font-size: 0.8em;
+        font-size: 1.4em;
     }
       
       .fadeIn-bottom{
         top: 80%;
     }
   }
+/* MEDIA QUERY FOR .projectsContainer */
+  @media (min-width: 1100px){
+    .container{
+
+        min-width:100%;
+    
+    }
+}
 
 
   
