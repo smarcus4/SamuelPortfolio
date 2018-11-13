@@ -1083,7 +1083,7 @@ footer{
     font-size: 10px;
     }
     
-    .container{
+    .codingContainer{
       display: block;
       width: 100%;
     }
@@ -1135,6 +1135,7 @@ footer{
       .content-details p{
         color: black;
         background: white;
+        font-size: 1.4em;
     }
       
       .fadeIn-bottom{
