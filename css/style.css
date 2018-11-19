@@ -37,7 +37,9 @@ html{
 }
 
 #particles-js{
-  background: linear-gradient(180deg,rgb(42,72,99),rgb(63,126,172));
+  /* background: linear-gradient(180deg,rgb(42,72,99),rgb(63,126,172)); */
+  background: linear-gradient(180deg,rgb(9,10,15), rgb(55,65,74));
+
   width: 100%;
   height:100%;
   position: absolute;
@@ -57,7 +59,9 @@ html{
 
 #myName{
     text-align: center;
-    color: rgb(252, 101, 101);
+    /* color: rgb(252, 101, 101); */
+    color: #ffffff;
+
     font-style: bold;
     padding-bottom: 25px;
     font-size: 50px;
@@ -115,7 +119,7 @@ html{
     bottom: 0;
     width: 100%;
     left:0;
-    height: 120px;
+    height: 130px;
     z-index: 0;
 }
 
