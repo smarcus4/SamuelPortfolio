@@ -79,7 +79,7 @@ particlesJS('particles-js',
         "out_mode": "out",
         "attract": {
           "enable": false,
-          "rotateX": 50,
+          "rotateX": 0,
           "rotateY": 0
         }
       }
@@ -88,11 +88,11 @@ particlesJS('particles-js',
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "grab"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "resize": true
