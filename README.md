@@ -4,4 +4,4 @@ My personal portfolio that showcases my web development programming knowledge, h
 
 click this link to view my site:
 
-(https://smarcus4.github.io/SamuelPortfolio/ "My Portfolio")
+[Visit my Portfolio!](https://smarcus4.github.io/SamuelPortfolio/ "My Portfolio")
